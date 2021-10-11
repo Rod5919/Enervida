@@ -154,7 +154,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .get-started-btn:hover {
-  background: #3ac162;
+  background: #f2889b;
   color: #fff;
 }
 
@@ -575,7 +575,7 @@ section {
 }
 
 .about .content .learn-more-btn:hover {
-  background: #3ac162;
+  background: #f2889b;
   color: #fff;
 }
 
@@ -1211,7 +1211,7 @@ section {
 }
 
 .pricing .btn-buy:hover {
-  background: #3ac162;
+  background: #f2889b;
 }
 
 .pricing .featured h3 {
@@ -1246,7 +1246,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #D9042B;
+  color: #f28907;
   float: left;
   width: 44px;
   height: 44px;
@@ -1278,7 +1278,7 @@ section {
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #D9042B;
+  background: #f28907;
   color: #fff;
 }
 
@@ -1307,7 +1307,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #f2c2cb;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1327,7 +1327,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #f2c2cb;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -1361,7 +1361,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #3ac162;
+  background: #f2889b;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1508,7 +1508,7 @@ section {
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
-  background: #3ac162;
+  background: #f2889b;
 }
 
 #footer .credits {
@@ -1517,7 +1517,7 @@ section {
 }
 
 #footer .credits a {
-  color: #3ac162;
+  color: #f2889b;
   transition: 0.3s;
 }
 
@@ -1541,7 +1541,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #3ac162;
+  background: #f2889b;
   color: #fff;
   text-decoration: none;
 }
