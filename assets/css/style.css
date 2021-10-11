@@ -274,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main .container {
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 /**
@@ -518,6 +518,10 @@ section {
   background: #D9042B;
   padding: 30px 0;
   color: #fff;
+}
+
+.submenu {
+  background-color: #fff;
 }
 
 @media (max-width: 992px) {
@@ -1540,4 +1544,39 @@ section {
   background: #3ac162;
   color: #fff;
   text-decoration: none;
+}
+
+
+/* Icons */
+
+.fa {
+  padding: 10px 11px 10px 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  color: #fff;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  margin-right: 5px;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+  margin-right: 5px;
+}
+
+.fa-link {
+  background: #696969;
+  color: white;
+  margin-right: 5px;
 }
