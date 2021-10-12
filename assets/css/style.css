@@ -1364,6 +1364,10 @@ section {
   background: #f2889b;
 }
 
+.cont-bred{
+  padding-top: 55px;
+}
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1385,169 +1389,33 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {
-  color: #37423b;
-  font-size: 14px;
-  background: #eef0ef;
-}
-
-#footer .footer-top {
-  padding: 60px 0 30px 0;
-  background: #f9faf9;
-}
-
-#footer .footer-top .footer-contact {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-contact h4 {
-  font-size: 22px;
-  margin: 0 0 30px 0;
-  padding: 2px 0 2px 0;
-  line-height: 1;
-  font-weight: 700;
-}
-
-#footer .footer-top .footer-contact p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
-  color: #777777;
-}
-
-#footer .footer-top h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #444444;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-#footer .footer-top .footer-links {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-links ul {
-  list-style: none;
+footer {
   padding: 0;
-  margin: 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #f28907;
 }
-
-#footer .footer-top .footer-links ul i {
-  padding-right: 2px;
-  color: #D9042B;
-  font-size: 18px;
-  line-height: 1;
-}
-
-#footer .footer-top .footer-links ul li {
-  padding: 10px 0;
+footer .cards{
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-#footer .footer-top .footer-links ul li:first-child {
-  padding-top: 0;
+footer .cards div{
+  padding: 20px;
+  width: 400px;
+  margin: 0 25px;
 }
 
-#footer .footer-top .footer-links ul a {
-  color: #777777;
-  transition: 0.3s;
-  display: inline-block;
-  line-height: 1;
-}
-
-#footer .footer-top .footer-links ul a:hover {
-  text-decoration: none;
-  color: #D9042B;
-}
-
-#footer .footer-newsletter {
-  font-size: 15px;
-}
-
-#footer .footer-newsletter h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #444444;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-#footer .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 50px;
-  text-align: left;
-  border: 1px solid #e0e5e2;
-}
-
-#footer .footer-newsletter form input[type="email"] {
-  border: 0;
-  padding: 4px 8px;
-  width: calc(100% - 100px);
-}
-
-#footer .footer-newsletter form input[type="submit"] {
-  position: absolute;
-  top: -1px;
-  right: -1px;
-  bottom: -1px;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px 2px 20px;
-  background: #D9042B;
+footer .about-and-social {
+  padding: 20px;
   color: #fff;
-  transition: 0.3s;
-  border-radius: 50px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-#footer .footer-newsletter form input[type="submit"]:hover {
-  background: #f2889b;
-}
+/*--------------------------------------------------------------
+# Icons
+--------------------------------------------------------------*/
 
-#footer .credits {
-  padding-top: 5px;
-  font-size: 13px;
-}
-
-#footer .credits a {
-  color: #f2889b;
-  transition: 0.3s;
-}
-
-#footer .credits a:hover {
-  color: #D9042B;
-}
-
-#footer .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #D9042B;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-#footer .social-links a:hover {
-  background: #f2889b;
-  color: #fff;
-  text-decoration: none;
-}
-
-
-/* Icons */
 
 .fa {
   padding: 10px 11px 10px 10px;
@@ -1579,4 +1447,40 @@ section {
   background: #696969;
   color: white;
   margin-right: 5px;
+}
+
+footer .cards div{
+  width: 430px;
+  /* background-color: #3B5998; */
+}
+
+footer a .bi {
+  padding: 10px 11px 10px 10px;
+  width: 50px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+  color: #fff;
+  background-color: #9b5f15;
+  margin-right: 15px;
+}
+
+footer .cards a{
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+footer .fa{
+  color:#f28907;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
 }
