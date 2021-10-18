@@ -1385,6 +1385,65 @@ section {
     transform: rotate(360deg);
   }
 }
+/*******************************************************
+   Servicio
+************************************************************/
+@media (min-width: 768px){
+.servicios{
+  margin-top: 60px;
+  
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr);
+  column-gap: 5px;
+  background-color:rgb(220, 226, 243)
+}
+}
+
+.servicios_imagen {
+   width: 100%;
+   height: 400px;
+   padding: 40px;
+   
+
+}
+.servicios_contenido {
+  width: 100%;
+  height: 400px ;
+  padding: 40px;
+color: black;
+font-family: "Open Sans", sans-serif;
+width: 100%;
+
+}
+
+@media (min-width: 768px){
+  .bio{
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    column-gap: 5px;
+    
+  }
+  }
+  
+  .bio_imagen {
+     width: 100%;
+     height: 400px;
+     padding: 40px;
+     
+  
+  }
+  .bio_contenido {
+    width: 100%;
+    height: 400px ;
+    padding: 40px;
+  color:black;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  
+  }
 
 /*--------------------------------------------------------------
 # Footer
