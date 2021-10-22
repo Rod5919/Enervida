@@ -27,6 +27,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+ul{
+  list-style-type: none;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -1561,4 +1565,59 @@ footer .fa-linkedin:hover{
   footer {
     grid-template-columns: 1fr;
   }
+}
+
+/* Servicios */
+
+.servicios{
+  padding-bottom: 100px;
+}
+
+.servicios_contenido h2{
+  border-bottom: 4px solid #D9042B;
+  padding-bottom: 5px;
+}
+
+.servicios_contenido h3{
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid #f28907;
+  width: max-content;
+  padding: 5px;
+  border-radius: 15px;
+  color: #fff;
+  background-color: #f28907;
+}
+
+.servicios_contenido li i{
+  color: #F2889B;
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+.bio{
+  padding-bottom: 430px;
+  display: flex;
+}
+
+.bio_contenido h2{
+  border-bottom: 4px solid #D9042B;
+  padding-bottom: 5px;
+}
+
+.bio_contenido h3{
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid #f28907;
+  width: max-content;
+  padding: 5px;
+  border-radius: 15px;
+  color: #fff;
+  background-color: #f28907;
+}
+
+.bio_contenido li i{
+  color: #F2889B;
+  margin-right: 5px;
+  font-size: 15px;
 }
