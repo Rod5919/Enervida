@@ -1531,12 +1531,31 @@ footer .cards a{
   align-items: center;
 }
 
+footer .cards a:hover{
+  color: #9b5f15;
+}
+
 footer .fa{
   color:#f28907;
   background-color: #fff;
   border-radius: 5px;
   margin-right: 15px;
 }
+
+/* #region maenwhile */
+
+footer .cards .unactive:hover{
+  color: #fff;
+  cursor: default;
+}
+
+footer .fa-linkedin:hover{
+  color: #f28907;
+  cursor: default;
+  opacity: 1;
+}
+
+/* #endregion maenwhile */
 
 @media screen and (max-width: 768px) {
   footer {
