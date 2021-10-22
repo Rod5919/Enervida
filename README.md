@@ -1,8 +1,10 @@
 # Enervida
 
-* Productos -> courses.html
-* Noticias -> events.html
-* Servicios -> trainers.html
-* RSE -> index.html
+## TODO: Reindex
+
+* Productos -> productos.html
+* Noticias -> noticias.html
+* Servicios -> servicios.html
+* RSE -> rse.html
 * Nosotros -> princing.html
-* Contáctanos -> contact.html
+* Contáctanos -> contacto.html

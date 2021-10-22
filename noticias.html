@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Courses - Mentor Bootstrap Template</title>
+  <title>Events - Mentor Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -42,15 +42,15 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <!-- <h1 class="logo me-auto"><a href="index.html">Enervida</a></h1> -->
-      <h1 class="logo me-auto"><a href="index.html"><img src="assets/img/enervida/logo enervida.png" alt=""></a></h1>
+      <!-- <h1 class="logo me-auto"><a href="rse.html">Enervida</a></h1> -->
+      <h1 class="logo me-auto"><a href="rse.html"><img src="assets/img/enervida/logo enervida.png" alt=""></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo enervida.png" alt="" class="img-fluid"></a>-->
+      <!-- <a href="rse.html" class="logo me-auto"><img src="assets/img/logo enervida.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="active" href="productos.html">Productos</a></li>
-          <li><a href="events.html">Noticias</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a class="active" href="noticias.html">Noticias</a></li>
           
           <li class="dropdown"><a href="servicios.html"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -58,28 +58,46 @@
               <li><a href="bio.html">Bioarquitectura</a></li>
             </ul>
           </li>
-          <li><a href="index.html">RSE</a></li>
-          <li><a href="pricing.html">Nosotros</a></li>
+          <li><a href="rse.html">RSE</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="contact.html" class="get-started-btn">Contáctanos</a>
+      <a href="contacto.html" class="get-started-btn">Contáctanos</a>
 
     </div>
   </header><!-- End Header -->
 
-  <main id="main" data-aos="fade-in">
+  <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs">
-      <div class="container">
-        <h2>Courses</h2>
-        <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
+    <div class="breadcrumbs submenu" data-aos="fade-in">
+      <div class="container d-flex align-items-center">
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="active" href="#">Actividades</a></li>
+            <li><a href="#">Alianzas</a></li>
+            <li><a href="#">Experiencias</a></li>
+          
+            <li><a href="#">Voluntarios</a></li>
+            <li><a href="#">Adopciones</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+  
       </div>
     </div><!-- End Breadcrumbs -->
-
-    <!-- ======= Courses Section ======= -->
+ <!-- ======= Hero Section ======= -->
+ <section id="hero" class="d-flex justify-content-center align-items-center">
+  <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+    <h1>Ultima noticia</h1>
+    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Optio, non...</h2>
+    <a href="courses.html" class="btn-get-started">Leer más...</a>
+  </div>
+</section><!-- End Hero -->
+    <!-- ---------------------------------------------------Aqui la chica--------------------------------------------------- -->
+  <h2 class="breadcrumbs">Noticias destacas</h2>
     <section id="courses" class="courses">
       <div class="container" data-aos="fade-up">
 
@@ -89,22 +107,19 @@
             <div class="course-item">
               <img src="assets/img/course-1.jpg" class="img-fluid" alt="...">
               <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Web Development</h4>
-                  <p class="price">$169</p>
-                </div>
 
                 <h3><a href="course-details.html">Website Design</a></h3>
                 <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
-                    <img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
-                    <span>Antonio</span>
-                  </div>
                   <div class="trainer-rank d-flex align-items-center">
                     <i class="bx bx-user"></i>&nbsp;50
                     &nbsp;&nbsp;
                     <i class="bx bx-heart"></i>&nbsp;65
+                  </div>
+                  <div class="trainer-profile d-flex align-items-center">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-link"></a>
                   </div>
                 </div>
               </div>
@@ -115,22 +130,19 @@
             <div class="course-item">
               <img src="assets/img/course-2.jpg" class="img-fluid" alt="...">
               <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Marketing</h4>
-                  <p class="price">$250</p>
-                </div>
 
                 <h3><a href="course-details.html">Search Engine Optimization</a></h3>
                 <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
-                    <img src="assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
-                    <span>Lana</span>
-                  </div>
                   <div class="trainer-rank d-flex align-items-center">
                     <i class="bx bx-user"></i>&nbsp;35
                     &nbsp;&nbsp;
                     <i class="bx bx-heart"></i>&nbsp;42
+                  </div>
+                  <div class="trainer-profile d-flex align-items-center">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-link"></a>
                   </div>
                 </div>
               </div>
@@ -141,22 +153,19 @@
             <div class="course-item">
               <img src="assets/img/course-3.jpg" class="img-fluid" alt="...">
               <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4>Content</h4>
-                  <p class="price">$180</p>
-                </div>
 
                 <h3><a href="course-details.html">Copywriting</a></h3>
                 <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
-                  <div class="trainer-profile d-flex align-items-center">
-                    <img src="assets/img/trainers/trainer-3.jpg" class="img-fluid" alt="">
-                    <span>Brandon</span>
-                  </div>
                   <div class="trainer-rank d-flex align-items-center">
                     <i class="bx bx-user"></i>&nbsp;20
                     &nbsp;&nbsp;
                     <i class="bx bx-heart"></i>&nbsp;85
+                  </div>
+                  <div class="trainer-profile d-flex align-items-center">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-link"></a>
                   </div>
                 </div>
               </div>
