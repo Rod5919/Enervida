@@ -1570,7 +1570,6 @@ footer .fa-linkedin:hover{
 /* Servicios */
 
 
-
 .main{
   margin-top: 100px;
 }
@@ -1583,6 +1582,10 @@ footer .fa-linkedin:hover{
   margin-bottom: 100px;
 }
 
+.informacion-text i{
+  color: #D9042B;
+  margin: 10px;
+}
 
 .informacion-img img{
   width: 500px;
@@ -1604,7 +1607,7 @@ footer .fa-linkedin:hover{
 .informacion-text h3{
   background-color: #f28907;
   width: fit-content;
-  padding: 5px;
+  padding: 10px 20px;
   border-radius: 15px;
   color: #fff;
 }
