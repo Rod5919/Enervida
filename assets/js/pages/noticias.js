@@ -64,36 +64,19 @@ document.getElementById("hero").getElementsByTagName('h2')[0].innerHTML = shorte
 document.getElementById("hero").getElementsByTagName('a')[0].href = values["highlighted"]["url"];
 document.getElementById("hero").style = `background: url("`+values["highlighted"]["img"]+`") top center;`;
 
-document.getElementById("art-1").getElementsByTagName('h3')[0].innerHTML = values["article 1"]["title"];
-document.getElementById("art-1").getElementsByTagName('p')[0].innerHTML = shortener(values["article 1"]["summary"].split(" "),false);
-document.getElementById("art-1").getElementsByTagName('img')[0].src = values["article 1"]["img"];
-document.getElementById("art-1").getElementsByClassName("likes")[0].innerHTML = values["article 1"]["likes"];
-document.getElementById("art-1").getElementsByClassName("date")[0].innerHTML = values["article 1"]["date"];
-document.getElementById("art-1").getElementsByClassName("fa-facebook")[0].href = "https://www.facebook.com/sharer/sharer.php?u="+encodeURIComponent(values["article 1"]["url"]);
-if(values["article 1"]["liked"]){
-    document.getElementById("like-1").classList.remove('bx-heart');
-    document.getElementById("like-1").classList.add('bi-heart-fill');
+function modifier(num) {
+    document.getElementById("art-"+num).getElementsByTagName('h3')[0].innerHTML = values["article "+num]["title"];
+    document.getElementById("art-"+num).getElementsByTagName('p')[0].innerHTML = shortener(values["article "+num]["summary"].split(" "),false);
+    document.getElementById("art-"+num).getElementsByTagName('img')[0].src = values["article "+num]["img"];
+    document.getElementById("art-"+num).getElementsByClassName("likes")[0].innerHTML = values["article "+num]["likes"];
+    document.getElementById("art-"+num).getElementsByClassName("date")[0].innerHTML = values["article "+num]["date"];
+    document.getElementById("art-"+num).getElementsByClassName("fa-facebook")[0].href = "https://www.facebook.com/sharer/sharer.php?u="+encodeURIComponent(values["article "+num]["url"]);
+    if(values["article "+num]["liked"]){
+        document.getElementById("like-"+num).classList.remove('bx-heart');
+        document.getElementById("like-"+num).classList.add('bi-heart-fill');
+    }
 }
 
-document.getElementById("art-2").getElementsByTagName('h3')[0].innerHTML = values["article 2"]["title"];
-document.getElementById("art-2").getElementsByTagName('p')[0].innerHTML = shortener(values["article 2"]["summary"].split(" "),false);
-document.getElementById("art-2").getElementsByTagName('img')[0].src = values["article 2"]["img"];
-document.getElementById("art-2").getElementsByClassName("likes")[0].innerHTML = values["article 2"]["likes"];
-document.getElementById("art-2").getElementsByClassName("date")[0].innerHTML = values["article 2"]["date"];
-document.getElementById("art-2").getElementsByClassName("fa-facebook")[0].href = "https://www.facebook.com/sharer/sharer.php?u="+encodeURIComponent(values["article 2"]["url"]);
-if(values["article 2"]["liked"]){
-    document.getElementById("like-2").classList.remove('bx-heart');
-    document.getElementById("like-2").classList.add('bi-heart-fill');
-}
-
-document.getElementById("art-3").getElementsByTagName('h3')[0].innerHTML = values["article 3"]["title"];
-document.getElementById("art-3").getElementsByTagName('p')[0].innerHTML = shortener(values["article 3"]["summary"].split(" "),false);
-document.getElementById("art-3").getElementsByTagName('img')[0].src = values["article 3"]["img"];
-document.getElementById("art-3").getElementsByClassName("likes")[0].innerHTML = values["article 3"]["likes"];
-document.getElementById("art-3").getElementsByClassName("date")[0].innerHTML = values["article 3"]["date"];
-document.getElementById("art-3").getElementsByClassName("fa-facebook")[0].href = "https://www.facebook.com/sharer/sharer.php?u="+encodeURIComponent(values["article 3"]["url"]);
-if(values["article 3"]["liked"]){
-    document.getElementById("like-3").classList.remove('bx-heart');
-    document.getElementById("like-3").classList.add('bi-heart-fill');
-}
-
+modifier("1");
+modifier("2");
+modifier("3");
