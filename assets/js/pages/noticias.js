@@ -69,6 +69,7 @@ document.getElementById("art-1").getElementsByTagName('p')[0].innerHTML = shorte
 document.getElementById("art-1").getElementsByTagName('img')[0].src = values["article 1"]["img"];
 document.getElementById("art-1").getElementsByClassName("likes")[0].innerHTML = values["article 1"]["likes"];
 document.getElementById("art-1").getElementsByClassName("date")[0].innerHTML = values["article 1"]["date"];
+document.getElementById("art-1").getElementsByClassName("fa-facebook")[0].href = "https://www.facebook.com/sharer/sharer.php?u="+encodeURIComponent(values["article 1"]["url"]);
 if(values["article 1"]["liked"]){
     document.getElementById("like-1").classList.remove('bx-heart');
     document.getElementById("like-1").classList.add('bi-heart-fill');
@@ -79,6 +80,7 @@ document.getElementById("art-2").getElementsByTagName('p')[0].innerHTML = shorte
 document.getElementById("art-2").getElementsByTagName('img')[0].src = values["article 2"]["img"];
 document.getElementById("art-2").getElementsByClassName("likes")[0].innerHTML = values["article 2"]["likes"];
 document.getElementById("art-2").getElementsByClassName("date")[0].innerHTML = values["article 2"]["date"];
+document.getElementById("art-2").getElementsByClassName("fa-facebook")[0].href = "https://www.facebook.com/sharer/sharer.php?u="+encodeURIComponent(values["article 2"]["url"]);
 if(values["article 2"]["liked"]){
     document.getElementById("like-2").classList.remove('bx-heart');
     document.getElementById("like-2").classList.add('bi-heart-fill');
@@ -89,6 +91,7 @@ document.getElementById("art-3").getElementsByTagName('p')[0].innerHTML = shorte
 document.getElementById("art-3").getElementsByTagName('img')[0].src = values["article 3"]["img"];
 document.getElementById("art-3").getElementsByClassName("likes")[0].innerHTML = values["article 3"]["likes"];
 document.getElementById("art-3").getElementsByClassName("date")[0].innerHTML = values["article 3"]["date"];
+document.getElementById("art-3").getElementsByClassName("fa-facebook")[0].href = "https://www.facebook.com/sharer/sharer.php?u="+encodeURIComponent(values["article 3"]["url"]);
 if(values["article 3"]["liked"]){
     document.getElementById("like-3").classList.remove('bx-heart');
     document.getElementById("like-3").classList.add('bi-heart-fill');
