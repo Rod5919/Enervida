@@ -1,4 +1,9 @@
-function change_title() {
-    document.getElementById("title").innerHTML = "Ivan Sangueza";
-}
-change_title()
+// values = {
+//     "title": "Jhair"
+// }
+
+// function change_title() {
+//     document.getElementById("title").innerHTML = values["title"];
+// }
+
+// change_title()
