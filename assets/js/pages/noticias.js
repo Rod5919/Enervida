@@ -15,7 +15,7 @@ values = {
         "date": "22-nov-2021"
     },
     "article 2": {
-        "title": "Video Friday: TurtleBot 4 ",
+        "title": "Video Friday: TurtleBot 4 Programacion backend ",
         "summary": `Cognitive Pilot's autonomous tech is now being integrated into production Kirovets K-7M tractors, and they've got big plans: "The third phase of the project envisages a fully self-driving tractor control mode without the need for human involvement. It includes group autonomous operation with a 'leader', the movement of a group of self-driving tractors on non-public roads, the autonomous movement of a robo-tractor paired with a combine harvester not equipped with an autonomous control system, and the use of an expanded set of farm implements with automated control and functionality to monitor their condition during operation."`,
         "url": "https://spectrum.ieee.org/video-friday-turtlebot-4",
         "img": "https://spectrum.ieee.org/media-library/an-irobot-roomba-create-3-with-a-computing-core-and-sensors-sitting-on-a-desk-with-an-overlay-that-says-turtlebot-4.png?id=27724603&amp;width=1920&amp;height=1080",
