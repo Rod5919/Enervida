@@ -522,6 +522,7 @@ section {
   background: #D9042B;
   padding: 30px 0;
   color: #fff;
+  position: relative;
 }
 
 .submenu {
@@ -727,6 +728,8 @@ section {
 .courses .course-item {
   border-radius: 5px;
   border: 1px solid #eef0ef;
+
+  margin-bottom: 20px;
 }
 
 .courses .course-content {
@@ -1369,7 +1372,7 @@ section {
 }
 
 .cont-bred{
-  padding-top: 55px;
+  padding-top: 100px;
 }
 
 @-webkit-keyframes animate-loading {
