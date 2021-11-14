@@ -90,3 +90,13 @@ document.getElementById("tel-pro").innerHTML = '<li><i class="bi bi-check-circle
 document.getElementById("bio-ben").innerHTML = '<li><i class="bi bi-check-circle"></i>'+values["bio"]["beneficios"].join('</li>\n<li><i class="bi bi-check-circle"></i>')+'</li>';
 document.getElementById("bio-ser").innerHTML = '<li><i class="bi bi-check-circle"></i>'+values["bio"]["servicios"].join('</li>\n<li><i class="bi bi-check-circle"></i>')+'</li>';
 document.getElementById("bio-pro").innerHTML = '<li><i class="bi bi-check-circle"></i>'+values["bio"]["proyectos"].join('</li>\n<li><i class="bi bi-check-circle"></i>')+'</li>';
+
+function adjust_window(id) {
+    window.scrollBy(0, document.getElementById(id).getBoundingClientRect()['y']-150);
+}
+
+window.addEventListener('load', function () {
+    if (window.location.href.toString().includes('#')) {
+        window.scrollBy(0,document.getElementById(window.location.href.toString().split('#')[1]).getBoundingClientRect()['y']-150);
+    }
+})
