@@ -50,7 +50,16 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a href="productos.html">Productos</a></li>
-          <li><a class="active" href="noticias.html">Noticias</a></li>
+          <li class="dropdown"><a class="active" href="noticias.html"><span>Noticias</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/noticias.html">Inicio</a></li>
+              <li><a class="submenu-item" onclick="refresh('1')" href="#1">Actividades</a></li>
+              <li><a class="submenu-item" onclick="refresh('2')" href="#2">Alianzas</a></li>
+              <li><a class="submenu-item" onclick="refresh('3')" href="#3">Experiencias</a></li>
+              <li><a class="submenu-item" onclick="refresh('4')" href="#4">Voluntarios</a></li>
+              <li><a class="submenu-item" onclick="refresh('5')" href="#5">Adopciones</a></li>
+            </ul>
+          </li>
           
           <li class="dropdown"><a href="servicios.html"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -73,23 +82,7 @@
   </header><!-- End Header -->
 
   <main style="margin: 120px 40px 0 40px;" id="main">
-    <!-- ======= Breadcrumbs ======= -->
-    <div style="margin-top: 80px;" class="breadcrumbs submenu" data-aos="fade-in">
-      <div class="container d-flex align-items-center">
-        <nav id="navbar" class="navbar order-last order-lg-0">
-          <ul>
-            <li><a href="/noticias.html">Inicio</a></li>
-            <li><a class="submenu-item" onclick="refresh('1')" href="#1">Actividades</a></li>
-            <li><a class="submenu-item" onclick="refresh('2')" href="#2">Alianzas</a></li>
-            <li><a class="submenu-item" onclick="refresh('3')" href="#3">Experiencias</a></li>
-            <li><a class="submenu-item" onclick="refresh('4')" href="#4">Voluntarios</a></li>
-            <li><a class="submenu-item" onclick="refresh('5')" href="#5">Adopciones</a></li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
-  
-      </div>
-    </div><!-- End Breadcrumbs -->   
+    
     <div id="list">
 
     </div>
