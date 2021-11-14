@@ -1803,3 +1803,29 @@ svg {
 .about__section .about__slot:hover .about__info {
     background-color:rgba(0,0,0,0.42);
 }
+
+.dashboard {
+  border-bottom: 1px solid #a9a9a9;
+  padding: 20px;
+}
+
+.dashboard h4 {
+  color: #696969;
+}
+
+.dashboard p {
+  color: #696969;
+}
+
+
+.dashboard:hover {
+  background: #D9042B;
+}
+
+.dashboard:hover h4{
+  color: #fff;
+}
+
+.dashboard:hover p{
+  color: #fff;
+}
