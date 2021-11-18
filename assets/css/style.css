@@ -1810,6 +1810,7 @@ svg {
 .dashboard {
   border-bottom: 1px solid #a9a9a9;
   padding: 20px;
+  margin-right: 40px;
 }
 
 .dashboard h4 {
