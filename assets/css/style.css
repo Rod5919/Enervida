@@ -1549,17 +1549,20 @@ footer .fa{
   margin-right: 15px;
 }
 
+footer #paw h4{
+  color: #fff;
+}
+
+footer #paw :hover{
+  opacity: 1;
+  color: #fff;
+}
+
 /* #region maenwhile */
 
 footer .cards .unactive:hover{
   color: #fff;
   cursor: default;
-}
-
-footer .fa-linkedin:hover{
-  color: #f28907;
-  cursor: default;
-  opacity: 1;
 }
 
 /* #endregion maenwhile */
@@ -1828,4 +1831,15 @@ svg {
 
 .dashboard:hover p{
   color: #fff;
+}
+
+.more {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.more :hover {
+  color: #9b5f15;
+  cursor: pointer;
 }
