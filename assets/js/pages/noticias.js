@@ -1,6 +1,7 @@
 // TODO: Añadir fecha a las noticias con icono
 // TODO: Añadir imagen a las noticias
 
+let counter = 1;
 values = {
     "highlighted": {
         "title": "NFTs: Wetin Non Fungible Token blockchain like Crypto be, why some dey worth millions?",
@@ -37,8 +38,6 @@ values = {
         "date": "24-nov-2021"
     },
 };
-
-let counter = 1;
 let news = {
     "1": {
         "title": "activities title 1",
