@@ -1,4 +1,4 @@
-values = {
+let values = {
     "highlighted": {
         "title": "NFTs: Wetin Non Fungible Token blockchain like Crypto be, why some dey worth millions?",
         "summary": 'NFTs na "one of a kind" thing for di digital world wey you fit buy or sell like any oda property but you no fit use hand hold am. Dem dey come in digital tokens wey be certificate of ownership for di digital assets. So e mean say na you own di rights to certain memes, tweets, digital artwork, etc even if dem still dey share am for social media. Look am like this, if you own di Mona Lisa painting no mean say pipo no fit buy di print of di . Or, e no mean say dem no fit take picture of di painting, but di original painting wey be one of a kind na di owner still get am. NFTs dey operate like crypto-currency on top say dem dey work with blockchain technology to keep record of who be di besin wey own dis NFT. You fit also add smart contract for NFT so when everr you sell am, for future, di creator (e.g, artist) go fit chop sometin inside.',
@@ -35,6 +35,31 @@ values = {
     },
 };
 
+function getData() {
+    // Creating the XMLHttpRequest object
+    var request = new XMLHttpRequest();
+
+    // Instantiating the request object
+    request.open("GET", "/data/news.json");
+
+    // Defining event listener for readystatechange event
+    request.onreadystatechange = function() {
+        // Check if the request is compete and was successful
+        if(this.readyState === 4 && this.status === 200) {
+            // Inserting the response from server into an HTML element
+            console.log(JSON.parse(this.responseText));
+            values = JSON.parse(this.responseText);
+            updateHero();
+            for (let i = 0; i < 3; i++) {
+                modifier((i+1).toString());
+            }
+        }
+    };
+
+    // Sending the request to the server
+    request.send();
+}
+
 function shortener(x, endline) {
     x[7] += endline?"<br>":"";
     x = (x.slice(0,14).join(" "));
@@ -59,10 +84,13 @@ function like(id) {
     // TODO: send 1 more like
 }
 
-document.getElementById("hero").getElementsByTagName('h1')[0].innerHTML = values["highlighted"]["title"];
-document.getElementById("hero").getElementsByTagName('h2')[0].innerHTML = shortener(values["highlighted"]["summary"].split(" "),true);
-document.getElementById("hero").getElementsByTagName('a')[0].href = values["highlighted"]["url"];
-document.getElementById("hero").style = `background: url("`+values["highlighted"]["img"]+`") top center;`;
+function updateHero() {
+    document.getElementById("hero").getElementsByTagName('h1')[0].innerHTML = values["highlighted"]["title"];
+    document.getElementById("hero").getElementsByTagName('h2')[0].innerHTML = shortener(values["highlighted"]["summary"].split(" "),true);
+    document.getElementById("hero").getElementsByTagName('a')[0].href = values["highlighted"]["url"];
+    document.getElementById("hero").style = `background: url("`+values["highlighted"]["img"]+`") top center;`;
+}
+
 
 function modifier(num) {
     document.getElementById("art-"+num).getElementsByTagName('h3')[0].innerHTML = values["article "+num]["title"];
@@ -76,8 +104,4 @@ function modifier(num) {
         document.getElementById("like-"+num).classList.add('bi-heart-fill');
     }
 }
-
-modifier("1");
-modifier("2");
-modifier("3");
-
+getData();
