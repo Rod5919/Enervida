@@ -1,0 +1,38 @@
+{
+    "1": {
+        "name": "adoption 1",
+        "description": "adopt description 1",
+        "img": "assets/img/adopciones-1.jpg",
+        "likes": 50
+    },
+    "2": {
+        "name": "adoption 2",
+        "description": "adopt description 2",
+        "img": "assets/img/adopciones-2.jpg",
+        "likes": 50
+    },
+    "3": {
+        "name": "adoption 3",
+        "description": "adopt description 3",
+        "img": "assets/img/adopciones-3.jpg",
+        "likes": 50
+    },
+    "4": {
+        "name": "adoption 4",
+        "description": "adopt description 4",
+        "img": "assets/img/adopciones-1.jpg",
+        "likes": 50
+    },
+    "5": {
+        "name": "adoption 5",
+        "description": "adopt description 5",
+        "img": "assets/img/adopciones-1.jpg",
+        "likes": 50
+    },
+    "6": {
+        "name": "adoption 6",
+        "description": "adopt description 6",
+        "img": "assets/img/adopciones-1.jpg",
+        "likes": 50
+    }
+}

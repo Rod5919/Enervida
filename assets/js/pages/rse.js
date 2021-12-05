@@ -9,16 +9,6 @@ values = {
         "text2": "Texto 2 de Actividades.",
         "img": "assets/img/about.jpg"
     },
-    "alianzas": {
-        "subtitle": "Subtítulo de Alianzas",
-        "text1": "Texto 1 de Alianzas.",
-        "bullets": ['Bullet 1 de Alianzas.',
-                    'Bullet 2 de Alianzas.',
-                    'Bullet 3 de Alianzas.',
-                    ],
-        "text2": "Texto 2 de Alianzas.",
-        "img": "assets/img/about.jpg"
-    },
     "experiencias": {
         "subtitle": "Subtítulo de Experiencias",
         "text1": "Texto 1 de Experiencias.",
@@ -92,17 +82,11 @@ document.getElementById("activities").getElementsByTagName('ul')[0].innerHTML = 
 document.getElementById("activities").getElementsByTagName('p')[1].innerHTML = values["actividades"]["text2"];
 document.getElementById("activities").getElementsByTagName('img')[0].src = values["actividades"]["img"];
 
-document.getElementById("alianzas").getElementsByTagName('h3')[0].innerHTML = values["alianzas"]["subtitle"];
-document.getElementById("alianzas").getElementsByTagName('p')[0].innerHTML = values["alianzas"]["text1"];
-document.getElementById("alianzas").getElementsByTagName('ul')[0].innerHTML = '<li><i class="bi bi-check-circle"></i>'+values["alianzas"]["bullets"].join('</li>\n<li><i class="bi bi-check-circle"></i>')+'</li>';
-document.getElementById("alianzas").getElementsByTagName('p')[1].innerHTML = values["alianzas"]["text2"];
-document.getElementById("activities").getElementsByTagName('img')[0].src = values["actividades"]["img"];
-
 document.getElementById("experiencias").getElementsByTagName('h3')[0].innerHTML = values["experiencias"]["subtitle"];
 document.getElementById("experiencias").getElementsByTagName('p')[0].innerHTML = values["experiencias"]["text1"];
 document.getElementById("experiencias").getElementsByTagName('ul')[0].innerHTML = '<li><i class="bi bi-check-circle"></i>'+values["experiencias"]["bullets"].join('</li>\n<li><i class="bi bi-check-circle"></i>')+'</li>';
 document.getElementById("experiencias").getElementsByTagName('p')[1].innerHTML = values["experiencias"]["text2"];
-document.getElementById("activities").getElementsByTagName('img')[0].src = values["actividades"]["img"];
+document.getElementById("experiencias").getElementsByTagName('img')[0].src = values["experiencias"]["img"];
 
 for (var i = 0; i < v; i++) {
     s += '<div class="col-lg-4 col-md-6 d-flex align-items-stretch"><div class="member"><img src="'
