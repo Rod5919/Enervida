@@ -1,5 +1,7 @@
 function post() {
-    alert($('#titular').val()+
-          $('#subcategoria').val()+
-          $('#resumen').val());
+    if ($('#titular').val() && $('#subcategoria').val() && $('#resumen').val()) {
+        alert($('#titular').val()+
+              $('#subcategoria').val()+
+              $('#resumen').val());
+    }
 }
