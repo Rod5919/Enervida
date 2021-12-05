@@ -127,3 +127,7 @@
   });
 
 })()
+
+function _upload(){
+  document.getElementById('file_upload_id').click();
+}
