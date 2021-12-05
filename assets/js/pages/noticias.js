@@ -1,18 +1,23 @@
 let values = {};
-
+let all_values = {}
+let counter = 10;
+let more = document.createElement("div");
+more.innerHTML = '<a href="" class="more">Ver más...</a>';
+more.className = "center-more";
+//#region Spotlight
 function getData() {
     // Creating the XMLHttpRequest object
     var request = new XMLHttpRequest();
 
     // Instantiating the request object
-    request.open("GET", "/data/news.json");
+    request.open("GET", "../../../data/news.json");
 
     // Defining event listener for readystatechange event
     request.onreadystatechange = function() {
         // Check if the request is compete and was successful
         if(this.readyState === 4 && this.status === 200) {
             // Inserting the response from server into an HTML element
-            console.log(JSON.parse(this.responseText));
+            // console.log(JSON.parse(this.responseText));
             values = JSON.parse(this.responseText);
             updateHero();
             for (let i = 0; i < 3; i++) {
@@ -31,7 +36,7 @@ function shortener(x, endline) {
     if (x[x.length-1] === ".") 
         x+="..";
     else
-        x+="...";
+    x+="...";
     return x
 }
 
@@ -56,7 +61,6 @@ function updateHero() {
     document.getElementById("hero").style = `background: url("`+values["highlighted"]["img"]+`") top center;`;
 }
 
-
 function modifier(num) {
     document.getElementById("art-"+num).getElementsByTagName('h3')[0].innerHTML = values["article "+num]["title"];
     document.getElementById("art-"+num).getElementsByTagName('p')[0].innerHTML = shortener(values["article "+num]["summary"].split(" "),false);
@@ -69,4 +73,74 @@ function modifier(num) {
         document.getElementById("like-"+num).classList.add('bi-heart-fill');
     }
 }
+
+function getData() {
+    // Creating the XMLHttpRequest object
+    var request = new XMLHttpRequest();
+    
+    // Instantiating the request object
+    request.open("GET", "../../../data/news.json");
+    
+    // Defining event listener for readystatechange event
+    request.onreadystatechange = function() {
+        // Check if the request is compete and was successful
+        if(this.readyState === 4 && this.status === 200) {
+            // Inserting the response from server into an HTML element
+            // console.log(JSON.parse(this.responseText));
+            values = JSON.parse(this.responseText);
+            updateHero();
+            for (let i = 0; i < 3; i++) {
+                modifier((i+1).toString());
+            }
+        }
+    };
+    
+    // Sending the request to the server
+    request.send();
+}
+//#endregion Spotlight
+
+function add_news(value){
+    var div = document.createElement("div");
+    div.className = "dashboard"
+    div.innerHTML = '<a href="'+value["url"]+
+                    '"><h4>'+value["title"]+
+                    '</h4><p>'+value["summary"]+'</p></a>';
+    document.getElementById("list").appendChild(div);
+}
+
+function getAllData() {
+    // Creating the XMLHttpRequest object
+    var request = new XMLHttpRequest();
+    
+    // Instantiating the request object
+    request.open("GET", "../../../data/all_news.json");
+    
+    // Defining event listener for readystatechange event
+    request.onreadystatechange = function() {
+        // Check if the request is compete and was successful
+        if(this.readyState === 4 && this.status === 200) {
+            // Inserting the response from server into an HTML element
+            counter = Object.keys(JSON.parse(this.responseText)).length < 10 ? Object.keys(JSON.parse(this.responseText)).length : 10;
+            // console.log(JSON.parse(this.responseText));
+            all_values = JSON.parse(this.responseText);
+
+            document.getElementById("list").innerHTML = "";
+            for (let index = 0; index < counter; index++) {
+                // console.log(all_values[(index+1).toString()])
+                add_news(all_values[(index+1).toString()]);
+            }
+
+            if (counter <= Object.keys(JSON.parse(this.responseText)).length) {
+                document.getElementById("list").appendChild(more);
+            }
+        }
+    };
+    // Sending the request to the server
+    request.send();
+}
+
+
+
 getData();
+getAllData();
