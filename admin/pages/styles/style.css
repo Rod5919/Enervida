@@ -288,7 +288,6 @@ main {
 
 .field input::placeholder{
   color: rgba(0, 0, 0, 0.2);
-  padding-left: 10px;
 }
 
 .field input:focus{
@@ -337,7 +336,7 @@ main {
   justify-content: center;
 }
 
-.btn button{
+.btn input{
   font-family: Mulish;
   font-style: normal;
   font-weight: bold;
