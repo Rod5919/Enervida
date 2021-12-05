@@ -311,7 +311,7 @@ main {
   color: rgba(0, 0, 0, 0.2);
 }
 
-#resumen{
+.paragraph{
   height: 133px;
   padding: 10px;
   background: rgba(196, 196, 196, 0.2);
@@ -320,7 +320,7 @@ main {
   border: 0;
 }
 
-#resumen::placeholder{
+.paragraph::placeholder{
   color: rgba(0, 0, 0, 0.2);
 }
 
