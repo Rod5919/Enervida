@@ -97,6 +97,6 @@ function adjust_window(id) {
 
 window.addEventListener('load', function () {
     if (window.location.href.toString().includes('#')) {
-        window.scrollBy(0,document.getElementById(window.location.href.toString().split('#')[1]).getBoundingClientRect()['y']-150);
+        adjust_window(window.location.href.toString().split('#')[1])
     }
 })
