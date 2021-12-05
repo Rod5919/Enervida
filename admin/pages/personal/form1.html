@@ -65,16 +65,21 @@
       <main>
             <form class="submit-form">
                 <div class="fields">
-                    <div class="field"><span>Titular</span><input type="text" placeholder="Titular" id="titular" required oninvalid="this.setCustomValidity('Debe colocar un titular')"></div>
-                    <div class="field"><span>Subcategoria</span><input type="text" placeholder="Subcategoria" id="subcategoria" required oninvalid="this.setCustomValidity('Debe escoger la subcategoria')"></div>
-                    <div class="field"><span>Resumen<br>max. 250 caracteres</span><textarea name="paragraph_text" cols="50" rows="10" id="resumen" maxlength="250" placeholder="Escribe el resumen"  required oninvalid="this.setCustomValidity('Debe escribir un resumen de la noticia')"></textarea></div>
-                    <div class="field"><span>Imagen</span>
-                    <div class="upload-field">
+                    <div class="field"><span>Nombre Institucional</span><input type="text" placeholder="Nombre Institucional" id="nombre-institucional" required oninvalid="this.setCustomValidity('Debe introducir un nombre institucional')"></div>
+                    <div class="field"><span>Acrónimo/Sigla</span><input type="text" placeholder="Acrónimo" id="sigla" required oninvalid="this.setCustomValidity('Debe introducir una sigla o acrónimo')"></div>
+                    <div class="field"><span>Descripción<br>max. 200 caracteres</span><textarea class="paragraph" name="paragraph_text" cols="50" rows="10" id="descripcion" maxlength="200" placeholder="Escribe una descripción"  required oninvalid="this.setCustomValidity('Debe escribir una descripción')"></textarea></div>
+                    <div class="field"><span>Logo</span>
+                      <div class="upload-field">
                         <input type="file" id="file_upload_id" style="display:none" id="file_upload_" >
-                        <label >imagen.jpg</label>
+                        <label >logo.jpg</label>
                         <a href="#"><i id="icon_upload" class="fa fa-folder" onclick="_upload()"></i></a>
+                      </div>
                     </div>
-                    </div>
+                    <div class="field"><span>Sitio Web</span><input type="text" placeholder="URL Sitio Web" id="website" required oninvalid="this.setCustomValidity('Debe introducir una URL a un sitio web')"></div>
+                    <div class="field"><span>Facebook</span><input type="text" placeholder="https://www.facebook.com/" id="facebook" required oninvalid="this.setCustomValidity('Debe introducir una URL a una página de Facebook')"></div>
+                    <div class="field"><span>LinkedIn</span><input type="text" placeholder="https://www.linkedin.com/" id="linkedin" required oninvalid="this.setCustomValidity('Debe introducir una URL a una página de LinkedIn')"></div>
+                    <div class="field"><span>YouTube</span><input type="text" placeholder="https://www.youtube.com/" id="youtube" required oninvalid="this.setCustomValidity('Debe introducir una URL a un canal de YouTube')"></div>
+                    <div class="field"><span>Instagram</span><input type="text" placeholder="https://www.instagram.com/" id="instagram" required oninvalid="this.setCustomValidity('Debe introducir una URL a una página de Instagram')"></div>
                 </div>
                 <div class="btn">
                     <input type="submit" onclick="post()" value="PUBLICAR">
