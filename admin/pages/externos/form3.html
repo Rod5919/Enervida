@@ -65,15 +65,14 @@
       <main>
             <form class="submit-form">
                 <div class="fields">
-                    <div class="field"><span>Titular</span><input type="text" placeholder="Titular" id="titular" required oninvalid="this.setCustomValidity('Debe colocar un titular')"></div>
-                    <div class="field"><span>Subcategoria</span><input type="text" placeholder="Subcategoria" id="subcategoria" required oninvalid="this.setCustomValidity('Debe escoger la subcategoria')"></div>
-                    <div class="field"><span>Resumen<br>max. 250 caracteres</span><textarea name="paragraph_text" cols="50" rows="10" id="resumen" maxlength="250" placeholder="Escribe el resumen"  required oninvalid="this.setCustomValidity('Debe escribir un resumen de la noticia')"></textarea></div>
-                    <div class="field"><span>Imagen</span>
-                    <div class="upload-field">
-                        <input type="file" id="file_upload_id" style="display:none" id="file_upload_" >
-                        <label >imagen.jpg</label>
-                        <a href="#"><i id="icon_upload" class="fa fa-folder" onclick="_upload()"></i></a>
-                    </div>
+                    <div class="field"><span>Nombre</span><input type="text" placeholder="Nombre" id="nombre" required oninvalid="this.setCustomValidity('Debe colocar un nombre')"></div>
+                    <div class="field"><span>Contacto</span><input type="text" placeholder="Contacto" id="contacto" required oninvalid="this.setCustomValidity('Debe colocar un contacto')"></div>
+                    <div class="field"><span>Actividad a la que desea donar<br>max. 100 caracteres</span><textarea class="paragraph" name="paragraph_text" cols="50" rows="10" id="actividad" maxlength="100" placeholder="Escribe la actividad"  required oninvalid="this.setCustomValidity('Debe escribir un resumen de la noticia')"></textarea></div>
+                    <div class="field">
+                      <span>País de residencia</span>
+                      <select name="pets" id="pets">
+
+                      </select>
                     </div>
                 </div>
                 <div class="btn">
@@ -84,5 +83,5 @@
       </main>
 </body>
 <script src="../../../assets/js/main.js"></script>
-<script src="js/form1.js"></script>
+<script src="js/form3.js"></script>
 </html>
