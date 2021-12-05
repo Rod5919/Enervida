@@ -1,8 +1,12 @@
 let values = {};
 let all_values = {}
-let counter = 10;
+let counter = 0;
 let more = document.createElement("div");
-more.innerHTML = '<a href="" class="more">Ver más...</a>';
+more.style.display = "flex";
+more.style.justifyContent = "center";
+more.style.margin = "20px 0";
+more.style.marginRight = "40px";
+more.innerHTML = '<button type="button" class="btn-more" onclick="getAllData();">Ver más...</button>';
 more.className = "center-more";
 //#region Spotlight
 function getData() {
@@ -121,7 +125,10 @@ function getAllData() {
         // Check if the request is compete and was successful
         if(this.readyState === 4 && this.status === 200) {
             // Inserting the response from server into an HTML element
-            counter = Object.keys(JSON.parse(this.responseText)).length < 10 ? Object.keys(JSON.parse(this.responseText)).length : 10;
+            counter +=10;
+            counter = Object.keys(JSON.parse(this.responseText)).length < counter ? Object.keys(JSON.parse(this.responseText)).length : counter;
+            console.log("counter");
+            console.log(counter);
             // console.log(JSON.parse(this.responseText));
             all_values = JSON.parse(this.responseText);
 
@@ -131,7 +138,7 @@ function getAllData() {
                 add_news(all_values[(index+1).toString()]);
             }
 
-            if (counter <= Object.keys(JSON.parse(this.responseText)).length) {
+            if (counter < Object.keys(JSON.parse(this.responseText)).length) {
                 document.getElementById("list").appendChild(more);
             }
         }

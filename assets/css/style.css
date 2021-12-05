@@ -1844,3 +1844,16 @@ svg {
   color: #9b5f15;
   cursor: pointer;
 }
+
+.btn-more{
+  width: fit-content;
+  border: 0;
+  background-color: #f28907;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.btn-more:hover{
+  background-color: #f28807c2;
+}
