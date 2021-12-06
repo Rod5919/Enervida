@@ -118,7 +118,7 @@ function getAllData() {
     var request = new XMLHttpRequest();
     
     // Instantiating the request object
-    request.open("GET", "../../../data/all_news.json");
+    request.open("GET", "../../../data/news.json");
     
     // Defining event listener for readystatechange event
     request.onreadystatechange = function() {
