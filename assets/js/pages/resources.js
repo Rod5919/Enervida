@@ -1,4 +1,13 @@
 let counter = 1;
+let more = document.createElement("div");
+more.style.display = "flex";
+more.style.justifyContent = "center";
+more.style.margin = "20px 0";
+more.style.marginRight = "40px";
+more.style.cursor = "pointer";
+more.innerHTML = '<button type="button" class="btn-more" onclick="counter++;refresh();"><h3>Ver más</h3></button>';
+more.className = "center-more";
+
 let values = {
     "1": {
         "title": "activities title 1",
@@ -139,13 +148,7 @@ function refresh() {
         add_news(key, value, counter);
     }
     if (parseInt(Object.keys(values).slice(-1)) > counter*10){
-        var div = document.createElement("div");
-        div.className = "informacion-text";
-        div.classList.add("more")
-        div.innerHTML = '<a onclick="counter++;refresh();"><h3>Ver más</h3></a>';
-        div.style.marginTop = "20px";
-        div.style.marginBottom = "20px";
-        document.getElementById("list").appendChild(div);
+        document.getElementById("list").appendChild(more);
     }
 }
 
