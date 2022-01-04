@@ -1,7 +1,8 @@
 let tries = 0;
 
 function change_page() {
-    usr = $('#user').val();
+    //usr = document.getElementById("user").value()
+    usr = $('#user').val(); 
     pass = $('#password').val();
     if (usr == "Hamed" && pass == "1234")
         window.location.href = "pages/form1.html"

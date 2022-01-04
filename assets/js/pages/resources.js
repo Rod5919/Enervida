@@ -145,8 +145,6 @@ function getData() {
         if(this.readyState === 4 && this.status === 200) {
             // Inserting the response from server into an HTML element
             // console.log(JSON.parse(this.responseText));
-            values = JSON.parse(this.responseText);
-            refresh();
         }
     };
 
@@ -165,7 +163,7 @@ function add_news(key, value, counter){
     }
 }
 
-function refresh() {
+function refresh(values) {
     document.getElementById("list").innerHTML = "";
     for (const [key, value] of Object.entries(values)) {
         add_news(key, value, counter);
