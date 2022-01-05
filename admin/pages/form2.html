@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicons -->
+    <link href="../../assets/img/enervida/logo enervida.png" rel="icon">
+    <link href="../../assets/img/enervida/logo enervida.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+
+    <!-- Vendor CSS Files -->
+    <link href="../../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+    
+          <!-- <h1 class="logo me-auto"><a href="rse.html">Enervida</a></h1> -->
+          <h1 class="logo me-auto"><a href="#"><img src="../../assets/img/enervida/Logo.png" alt=""></a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="rse.html" class="logo me-auto"><img src="assets/img/logo enervida.png" alt="" class="img-fluid"></a>-->
+    
+          <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+              <li class="dropdown"><a href="#"><span>Alianzas</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="personal/form1.html">Nuestros aliados</a></li>
+                  <li><a href="personal/form2.html">Nuestros colaboradores</a></li>
+                  <li><a href="personal/form3.html">Documentos legales</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Externos</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="externos/form1.html">Adopciones</a></li>
+                  <li><a href="externos/form2.html">Nuestros voluntarios</a></li>
+                  <li><a href="externos/form3.html">Donaciones</a></li>
+                </ul>
+              </li>
+              <li><a href="form1.html">Noticias</a></li>
+              <li><a class="active" href="form2.html">Recursos</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->    
+        </div>
+      </header><!-- End Header -->
+      <main>
+            <form class="submit-form">
+                <div class="fields">
+                    <div class="field"><span>Titular</span><input type="text" placeholder="Titular" id="titular" required oninvalid="this.setCustomValidity('Debe colocar un titular')"></div>
+                    <div class="field"><span>Subcategoria</span><input type="text" placeholder="Subcategoria" id="subcategoria" required oninvalid="this.setCustomValidity('Debe escoger la subcategoria')"></div>
+                    <div class="field"><span>Nota<br>max. 500 caracteres</span><textarea class="paragraph" name="paragraph_text" cols="50" rows="10" id="resumen" maxlength="500" placeholder="Escribe el resumen"  required oninvalid="this.setCustomValidity('Debe escribir un resumen de la noticia')"></textarea></div>
+                    <div class="field"><span>Imagen</span>
+                    <div class="upload-field">
+                        <input type="file" id="file_upload_id" style="display:none" id="file_upload_" >
+                        <label >imagen.jpg</label>
+                        <a href="#"><i id="icon_upload" class="fa fa-folder" onclick="_upload()"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <input type="submit" onclick="post()" value="PUBLICAR">
+                    <!-- <button type="button" class="btn-upload" onchange="uploaded_img()" onclick="post()">PUBLICAR</button> -->
+                </div>
+            </form>
+      </main>
+</body>
+<script src="../../assets/js/main.js"></script>
+<script src="js/form1.js"></script>
+</html>
+

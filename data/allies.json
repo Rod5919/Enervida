@@ -1,0 +1,63 @@
+{
+    "Ally 1":{
+        "Nombre institucional": "String",
+        "Acrónimo/sigla": "String",
+        "Descripción": "String",
+        "Logo": "String",
+        "Sitio web": "String",
+        "Facebook": "String",
+        "Whatsapp": "String",
+        "LinkedIn": "String"
+    },
+    "Ally 2":{
+        "Nombre institucional": "String",
+        "Acrónimo/sigla": "String",
+        "Descripción": "String",
+        "Logo": "String",
+        "Sitio web": "String",
+        "Facebook": "String",
+        "Whatsapp": "String",
+        "LinkedIn": "String"
+    },
+    "Ally 3":{
+        "Nombre institucional": "String",
+        "Acrónimo/sigla": "String",
+        "Descripción": "String",
+        "Logo": "String",
+        "Sitio web": "String",
+        "Facebook": "String",
+        "Whatsapp": "String",
+        "LinkedIn": "String"
+    },
+    "Ally 4":{
+        "Nombre institucional": "String",
+        "Acrónimo/sigla": "String",
+        "Descripción": "String",
+        "Logo": "String",
+        "Sitio web": "String",
+        "Facebook": "String",
+        "Whatsapp": "String",
+        "LinkedIn": "String"
+    },
+    "Ally 5":{
+        "Nombre institucional": "String",
+        "Acrónimo/sigla": "String",
+        "Descripción": "String",
+        "Logo": "String",
+        "Sitio web": "String",
+        "Facebook": "String",
+        "Whatsapp": "String",
+        "LinkedIn": "String"
+    },
+    "Ally 6":{
+        "Nombre institucional": "String",
+        "Acrónimo/sigla": "String",
+        "Descripción": "String",
+        "Logo": "String",
+        "Sitio web": "String",
+        "Facebook": "String",
+        "Whatsapp": "String",
+        "LinkedIn": "String"
+    }
+}
+

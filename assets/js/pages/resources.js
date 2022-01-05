@@ -1,4 +1,13 @@
 let counter = 1;
+let more = document.createElement("div");
+more.style.display = "flex";
+more.style.justifyContent = "center";
+more.style.margin = "20px 0";
+more.style.marginRight = "40px";
+more.style.cursor = "pointer";
+more.innerHTML = '<button type="button" class="btn-more" onclick="counter++;getData();"><h3>Ver más</h3></button>';
+more.className = "center-more";
+
 let values = {
     "1": {
         "title": "activities title 1",
@@ -122,32 +131,47 @@ let values = {
     },
 };
 
+
+function getData() {
+    // Creating the XMLHttpRequest object
+    var request = new XMLHttpRequest();
+
+    // Instantiating the request object
+    request.open("GET", "../../../../data/resources.json");
+
+    // Defining event listener for readystatechange event
+    request.onreadystatechange = function() {
+        // Check if the request is compete and was successful
+        if(this.readyState === 4 && this.status === 200) {
+            // Inserting the response from server into an HTML element
+            // console.log(JSON.parse(this.responseText));
+        }
+    };
+
+    // Sending the request to the server
+    request.send();
+}
+
 function add_news(key, value, counter){
     if (parseInt(key) < counter*10){
         var div = document.createElement("div");
         div.className = "dashboard";
         div.innerHTML = '<a href="'+value["url"]+
-        '"><h4>'+value["title"]+
-        '</h4><p>'+value["summary"]+'</p></a>';
+        '"><div id="dashboard-img-date"><img style="width: 200px;"src="'+value["img"]+'" alt=""><span>'+value["date"]+'</span></div><div id="dashboard-texts"><h4>'+value["title"]+
+        '</h4><p>'+value["summary"]+'</p></div></a>';
         document.getElementById("list").appendChild(div)
     }
 }
 
-function refresh() {
+function refresh(values) {
     document.getElementById("list").innerHTML = "";
     for (const [key, value] of Object.entries(values)) {
         add_news(key, value, counter);
     }
     if (parseInt(Object.keys(values).slice(-1)) > counter*10){
-        var div = document.createElement("div");
-        div.className = "informacion-text";
-        div.classList.add("more")
-        div.innerHTML = '<a onclick="counter++;refresh();"><h3>Ver más</h3></a>';
-        div.style.marginTop = "20px";
-        div.style.marginBottom = "20px";
-        document.getElementById("list").appendChild(div);
+        document.getElementById("list").appendChild(more);
     }
 }
 
-refresh()
+getData()
 

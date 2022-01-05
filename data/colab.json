@@ -1,0 +1,46 @@
+{
+    "Colab 1": {
+        "Nombre": "String",
+        "Apellido": "String",
+        "Cargo": "String",
+        "Fotografia": "String",
+        "Whatsapp": "String",
+        "Facebook": "String",
+        "LinkedIn": "String",
+        "Youtube": "String",
+        "Instagram": "String"
+    },
+    "Colab 2": {
+        "Nombre": "String",
+        "Apellido": "String",
+        "Cargo": "String",
+        "Fotografia": "String",
+        "Whatsapp": "String",
+        "Facebook": "String",
+        "LinkedIn": "String",
+        "Youtube": "String",
+        "Instagram": "String"
+    },
+    "Colab 3": {
+        "Nombre": "String",
+        "Apellido": "String",
+        "Cargo": "String",
+        "Fotografia": "String",
+        "Whatsapp": "String",
+        "Facebook": "String",
+        "LinkedIn": "String",
+        "Youtube": "String",
+        "Instagram": "String"
+    },
+    "Colab 4": {
+        "Nombre": "String",
+        "Apellido": "String",
+        "Cargo": "String",
+        "Fotografia": "String",
+        "Whatsapp": "String",
+        "Facebook": "String",
+        "LinkedIn": "String",
+        "Youtube": "String",
+        "Instagram": "String"
+    }
+}

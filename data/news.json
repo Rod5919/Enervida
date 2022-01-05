@@ -1,0 +1,234 @@
+{
+    "highlighted": {
+        "title": "NFTs: Wetin Non Fungible Token blockchain like Crypto be, why some dey worth millions?",
+        "summary": "NFTs na \"one of a kind\" thing for di digital world wey you fit buy or sell like any oda property but you no fit use hand hold am. Dem dey come in digital tokens wey be certificate of ownership for di digital assets. So e mean say na you own di rights to certain memes, tweets, digital artwork, etc even if dem still dey share am for social media. Look am like this, if you own di Mona Lisa painting no mean say pipo no fit buy di print of di . Or, e no mean say dem no fit take picture of di painting, but di original painting wey be one of a kind na di owner still get am. NFTs dey operate like crypto-currency on top say dem dey work with blockchain technology to keep record of who be di besin wey own dis NFT. You fit also add smart contract for NFT so when everr you sell am, for future, di creator (e.g, artist) go fit chop sometin inside.",
+        "url": "https://www.bbc.com/pidgin/world-59055385",
+        "img": "https://ichef.bbci.co.uk/news/800/cpsprodpb/12531/production/_121275057_nftwetinnonfungibletokenblockchainlikecryptobewhysomedeyworthmillions.jpg"
+    },
+    "article 1": {
+        "title": "Semifinales de 'League of Legends' de 2021: enfrentamientos, fechas, horarios y dónde ver",
+        "summary": "Este fin de semana se disputarán las semifinales del mundial de 'League of Lengeds'. O lo que es lo mismo, las dos series al mejor de 5 que decidirán quienes son los 2 mejores equipos del mundo. ¡Y tenemos muchas ganas de ver qué ocurre! Por un lado tendremos el enfrentamiento entre DAMWON KIA y T1, dos de los mejores equipos de corea y del mundo. Por la otra parte, Gen.G se batirá en duelo contra EDward Gaming en otra semifinal para la historia.",
+        "url": "https://www.marca.com/esports/league-of-legends/2021/10/29/617c0cc1e2704e0eae8b45b6.html",
+        "img": "https://phantom-marca.unidadeditorial.es/b9cf5dfe500d5dd5b0a0eaa45202fbc1/resize/660/f/webp/assets/multimedia/imagenes/2021/10/29/16355196538598.jpg",
+        "liked": false,
+        "likes": 12,
+        "date": "22-nov-2021"
+    },
+    "article 2": {
+        "title": "Video Friday: TurtleBot 4 Programacion backend ",
+        "summary": "Cognitive Pilot's autonomous tech is now being integrated into production Kirovets K-7M tractors, and they've got big plans: \"The third phase of the project envisages a fully self-driving tractor control mode without the need for human involvement. It includes group autonomous operation with a 'leader', the movement of a group of self-driving tractors on non-public roads, the autonomous movement of a robo-tractor paired with a combine harvester not equipped with an autonomous control system, and the use of an expanded set of farm implements with automated control and functionality to monitor their condition during operation.\"",
+        "url": "https://spectrum.ieee.org/video-friday-turtlebot-4",
+        "img": "https://spectrum.ieee.org/media-library/an-irobot-roomba-create-3-with-a-computing-core-and-sensors-sitting-on-a-desk-with-an-overlay-that-says-turtlebot-4.png?id=27724603&amp;width=1920&amp;height=1080",
+        "liked": false,
+        "likes": 32,
+        "date": "23-nov-2021"
+        
+    },
+    "article 3": {
+        "title": "¡La robótica no es aburrida! Conoce a Aziel Medina, ingeniera que te da hacks de tecnología",
+        "summary": "Existen muchos tipos de ingenierías, algunas de ellas pueden confundirse, pero sin duda escuchar sobre ingeniería en robótica puede sorprendernos de inmediato. Aunque es una carrera que puede ser demandante, eso no implica que sea aburrida, algo de lo que se ha encargado de desmentir Aziel Medina. https://www.milenio.com/virales/aziel-medina-ingeniera-robotica-comparte-hacks-tiktok",
+        "url": "https://www.milenio.com/virales/aziel-medina-ingeniera-robotica-comparte-hacks-tiktok",
+        "img": "https://imagenes.milenio.com/F5x2rAiciaA2b4G7EsAWegcSHLY=/958x596/smart/https://www.milenio.com/uploads/media/2021/10/19/aziel-medina-demostrado-robotica-util.jpg",
+        "liked": false,
+        "likes": 99,
+        "date": "24-nov-2021"
+    },
+
+    "1": {
+        "title": "activities title 1",
+        "summary": "summary 1",
+        "img": "url #1",
+        "url": "#1",
+        "date": "5-dic-2015"
+    },
+    "2": {
+        "title": "activities title 2",
+        "summary": "summary 2",
+        "img": "url #2",
+        "url": "#2",
+        "date": "6-dic-2015"
+    },
+    "3": {
+        "title": "activities title 3",
+        "summary": "summary 3",
+        "img": "url #3",
+        "url": "#3",
+        "date": "7-dic-2015"
+    },
+    "4": {
+        "title": "activities title 4",
+        "summary": "summary 4",
+        "img": "url #4",
+        "url": "#4",
+        "date": "8-dic-2015"
+    },
+    "5": {
+        "title": "activities title 5",
+        "summary": "summary 5",
+        "img": "url #5",
+        "url": "#5",
+        "date": "9-dic-2015"
+    },
+    "6": {
+        "title": "activities title 6",
+        "summary": "summary 6",
+        "img": "url #6",
+        "url": "#6",
+        "date": "10-dic-2015"
+    },
+    "7": {
+        "title": "activities title 7",
+        "summary": "summary 7",
+        "img": "url #7",
+        "url": "#7",
+        "date": "10-dic-2015"
+    },
+    "8": {
+        "title": "activities title 8",
+        "summary": "summary 8",
+        "img": "url #8",
+        "url": "#8",
+        "date": "5-dic-2015"
+    },
+    "9": {
+        "title": "activities title 9",
+        "summary": "summary 9",
+        "img": "url #9",
+        "url": "#9",
+        "date": "6-dic-2015"
+    },
+    "10": {
+        "title": "activities title 10",
+        "summary": "summary 10",
+        "img": "url #10",
+        "url": "#10",
+        "date": "7-dic-2015"
+    },
+    "11": {
+        "title": "activities title 11",
+        "summary": "summary 11",
+        "img": "url #11",
+        "url": "#11",
+        "date": "8-dic-2015"
+    },
+    "12": {
+        "title": "activities title 12",
+        "summary": "summary 12",
+        "img": "url #12",
+        "url": "#12",
+        "date": "9-dic-2015"
+    },
+    "13": {
+        "title": "activities title 13",
+        "summary": "summary 13",
+        "img": "url #13",
+        "url": "#13",
+        "date": "10-dic-2015"
+    },
+    "14": {
+        "title": "activities title 14",
+        "summary": "summary 14",
+        "img": "url #14",
+        "url": "#14",
+        "date": "10-dic-2015"
+    },
+    "15": {
+        "title": "activities title 15",
+        "summary": "summary 15",
+        "img": "url #15",
+        "url": "#15",
+        "date": "5-dic-2015"
+    },
+    "16": {
+        "title": "activities title 16",
+        "summary": "summary 16",
+        "img": "url #16",
+        "url": "#16",
+        "date": "6-dic-2015"
+    },
+    "17": {
+        "title": "activities title 17",
+        "summary": "summary 17",
+        "img": "url #17",
+        "url": "#17",
+        "date": "7-dic-2015"
+    },
+    "18": {
+        "title": "activities title 18",
+        "summary": "summary 18",
+        "img": "url #18",
+        "url": "#18",
+        "date": "8-dic-2015"
+    },
+    "19": {
+        "title": "activities title 19",
+        "summary": "summary 19",
+        "img": "url #19",
+        "url": "#19",
+        "date": "9-dic-2015"
+    },
+    "20": {
+        "title": "activities title 20",
+        "summary": "summary 20",
+        "img": "url #20",
+        "url": "#20",
+        "date": "10-dic-2015"
+    },
+    "21": {
+        "title": "activities title 21",
+        "summary": "summary 21",
+        "img": "url #21",
+        "url": "#21",
+        "date": "10-dic-2015"
+    },
+    "22": {
+        "title": "activities title 22",
+        "summary": "summary 22",
+        "img": "url #22",
+        "url": "#22",
+        "date": "5-dic-2015"
+    },
+    "23": {
+        "title": "activities title 23",
+        "summary": "summary 23",
+        "img": "url #23",
+        "url": "#23",
+        "date": "6-dic-2015"
+    },
+    "24": {
+        "title": "activities title 24",
+        "summary": "summary 24",
+        "img": "url #24",
+        "url": "#24",
+        "date": "7-dic-2015"
+    },
+    "25": {
+        "title": "activities title 25",
+        "summary": "summary 25",
+        "img": "url #25",
+        "url": "#25",
+        "date": "8-dic-2015"
+    },
+    "26": {
+        "title": "activities title 26",
+        "summary": "summary 26",
+        "img": "url #26",
+        "url": "#26",
+        "date": "9-dic-2015"
+    },
+    "27": {
+        "title": "activities title 27",
+        "summary": "summary 27",
+        "img": "url #27",
+        "url": "#27",
+        "date": "10-dic-2015"
+    },
+    "28": {
+        "title": "activities title 28",
+        "summary": "summary 28",
+        "img": "url #28",
+        "url": "#28",
+        "date": "10-dic-2015"
+    }
+
+}

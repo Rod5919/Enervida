@@ -1811,6 +1811,21 @@ svg {
   border-bottom: 1px solid #a9a9a9;
   padding: 20px;
   margin-right: 40px;
+  height: 250px;
+}
+
+.dashboard a{
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr);
+}
+
+.dashboard div{
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard img{
+  border-radius: 15px;
 }
 
 .dashboard h4 {
@@ -1821,6 +1836,9 @@ svg {
   color: #696969;
 }
 
+.dashboard span {
+  padding-top: 15px;
+}
 
 .dashboard:hover {
   background: #D9042B;
@@ -1843,4 +1861,17 @@ svg {
 .more :hover {
   color: #9b5f15;
   cursor: pointer;
+}
+
+.btn-more{
+  width: fit-content;
+  border: 0;
+  background-color: #f28907;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.btn-more:hover{
+  background-color: #f28807c2;
 }
