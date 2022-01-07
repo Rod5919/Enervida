@@ -1,6 +1,7 @@
 import GetData from "./modules/GetData.js";
 const api = "../../../data/dashboard.json"
-const values = GetData(api, refresh);
+
+GetData(api, refresh);
 
 function add_news(value){
     var div = document.createElement("div");
