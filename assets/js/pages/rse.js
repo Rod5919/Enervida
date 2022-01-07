@@ -1,4 +1,4 @@
-values = {
+/*values = {
 	"actividades": {
         "subtitle": "Subtítulo de Actividades",
         "text1": "Texto 1 de Actividades.",
@@ -68,7 +68,7 @@ values = {
             "likes": 70
         }
     ]
-}
+}*/
 
 let v = Object.keys(values.voluntarios).length;
 let v1 = Object.keys(values.adopciones).length;

@@ -8,13 +8,15 @@ more.style.margin = "20px 0";
 more.style.marginRight = "40px";
 more.innerHTML = '<button type="button" class="btn-more" onclick="getAllData();">Ver más...</button>';
 more.className = "center-more";
+
+let api = "../../../data/news.json";
 //#region Spotlight
-function getData() {
+function getData(api) {
     // Creating the XMLHttpRequest object
     var request = new XMLHttpRequest();
 
     // Instantiating the request object
-    request.open("GET", "../../../data/news.json");
+    request.open("GET", api);
 
     // Defining event listener for readystatechange event
     request.onreadystatechange = function() {
@@ -116,12 +118,12 @@ function add_news(value){
     document.getElementById("list").appendChild(div);
 }
 
-function getAllData() {
+function getAllData(api) {
     // Creating the XMLHttpRequest object
     var request = new XMLHttpRequest();
     
     // Instantiating the request object
-    request.open("GET", "../../../data/news.json");
+    request.open("GET", api);
     
     // Defining event listener for readystatechange event
     request.onreadystatechange = function() {
@@ -150,5 +152,5 @@ function getAllData() {
     request.send();
 }
 
-getData();
-getAllData();
+getData(api);
+getAllData(api);
