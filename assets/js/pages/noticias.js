@@ -2,14 +2,15 @@ let values = {};
 let all_values = {}
 let counter = 0;
 let more = document.createElement("div");
+let api = "../../../data/news.json";
+
 more.style.display = "flex";
 more.style.justifyContent = "center";
 more.style.margin = "20px 0";
 more.style.marginRight = "40px";
-more.innerHTML = '<button type="button" class="btn-more" onclick="getAllData();">Ver más...</button>';
+more.innerHTML = `<button type="button" class="btn-more" onclick="getAllData(\'${api}\')";">Ver más...</button>`;
 more.className = "center-more";
 
-let api = "../../../data/news.json";
 //#region Spotlight
 function getData(api) {
     // Creating the XMLHttpRequest object
@@ -110,10 +111,14 @@ function add_news(value){
     var div = document.createElement("div");
     div.className = "dashboard"
     div.innerHTML =`<a href="${value.url}">
+                      <div>
                       <img src="${value.img}" alt="${value["title"]}">
-                      <h4>${value["title"]}</h4>
-                      <p>${value["summary"]}</p>
                       <span>${value["date"]}</span>
+                      </div>
+                      <div>
+                        <h4>${value["title"]}</h4>
+                        <p>${value["summary"]}</p>
+                      </div>
                     </a>`;
     document.getElementById("list").appendChild(div);
 }
@@ -132,8 +137,8 @@ function getAllData(api) {
             // Inserting the response from server into an HTML element
             counter +=10;
             counter = Object.keys(JSON.parse(this.responseText)).length < counter ? Object.keys(JSON.parse(this.responseText)).length : counter;
-            console.log("counter");
-            console.log(counter);
+            // console.log("counter");
+            // console.log(counter);
             // console.log(JSON.parse(this.responseText));
             all_values = JSON.parse(this.responseText);
 
