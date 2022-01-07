@@ -142,6 +142,12 @@ ul{
   max-height: 90px;
 }
 
+@media (max-width: 470px) {
+  #header .logo img{
+    width: 140px;
+  }
+}
+
 /**
 * Get Startet Button 
 */
@@ -390,7 +396,6 @@ ul{
 #hero {
   width: 100%;
   height: 80vh;
-  background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
   position: relative;
 }
@@ -1503,14 +1508,14 @@ footer .about-and-social {
   margin-right: 5px;
 }
 
-.fa-google {
-  background: #dd4b39;
+.fa-linkedin {
+  background: #0e76A8;
   color: white;
   margin-right: 5px;
 }
 
 .fa-link {
-  background: #696969;
+  background: #D9042B;
   color: white;
   margin-right: 5px;
 }
@@ -1613,9 +1618,10 @@ footer .cards .unactive:hover{
 .informacion-text h3{
   background-color: #f28907;
   width: fit-content;
-  padding: 10px 20px;
-  border-radius: 15px;
+  padding: 8px 12px;
+  border-radius: 12px;
   color: #fff;
+  font-size: 15px;
 }
 
 .information-text bi{
@@ -1811,6 +1817,23 @@ svg {
   border-bottom: 1px solid #a9a9a9;
   padding: 20px;
   margin-right: 40px;
+  height: fit-content;
+}
+
+.dashboard a{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 15px;
+}
+
+.dashboard div{
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard img{
+  border-radius: 15px;
+  width: 20vw;
 }
 
 .dashboard h4 {
@@ -1821,16 +1844,16 @@ svg {
   color: #696969;
 }
 
+.dashboard span {
+  padding-top: 15px;
+  color: #696969;
+}
 
 .dashboard:hover {
   background: #D9042B;
 }
 
-.dashboard:hover h4{
-  color: #fff;
-}
-
-.dashboard:hover p{
+.dashboard:hover *{
   color: #fff;
 }
 

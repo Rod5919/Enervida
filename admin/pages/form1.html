@@ -67,22 +67,25 @@
             <form class="submit-form">
                 <div class="fields">
                     <div class="field"><span>Titular</span><input type="text" placeholder="Titular" id="titular" required oninvalid="this.setCustomValidity('Debe colocar un titular')"></div>
-                    <div class="field"><span>Subcategoria</span><input type="text" placeholder="Subcategoria" id="subcategoria" required oninvalid="this.setCustomValidity('Debe escoger la subcategoria')"></div>
                     <div class="field"><span>Nota<br>max. 500 caracteres</span><textarea class="paragraph" name="paragraph_text" cols="50" rows="10" id="resumen" maxlength="500" placeholder="Escribe el resumen"  required oninvalid="this.setCustomValidity('Debe escribir un resumen de la noticia')"></textarea></div>
                     <div class="field"><span>Imagen</span>
                     <div class="upload-field">
-                        <input type="file" id="file_upload_id" style="display:none" id="file_upload_" >
+                        <input type="file" id="file_upload_id" style="display:none" id="file_upload_" accept=".jpg, .jpeg, .png" onchange="readURL(this);">
                         <label >imagen.jpg</label>
                         <a href="#"><i id="icon_upload" class="fa fa-folder" onclick="_upload()"></i></a>
                     </div>
-                    </div>
+                  </div>
                 </div>
                 <div class="btn">
-                    <input type="submit" onclick="post()" value="PUBLICAR">
-                    <!-- <button type="button" class="btn-upload" onchange="uploaded_img()" onclick="post()">PUBLICAR</button> -->
+                  <input type="submit" onclick="post()" value="PUBLICAR">
                 </div>
             </form>
       </main>
+      <div class="image">
+        <figure>
+          <img id="blah" src="#" alt=""/>
+        </figure>
+      </div>
 </body>
 <script src="../../assets/js/main.js"></script>
 <script src="js/form1.js"></script>
