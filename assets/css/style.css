@@ -1508,14 +1508,14 @@ footer .about-and-social {
   margin-right: 5px;
 }
 
-.fa-google {
-  background: #dd4b39;
+.fa-linkedin {
+  background: #0e76A8;
   color: white;
   margin-right: 5px;
 }
 
 .fa-link {
-  background: #696969;
+  background: #D9042B;
   color: white;
   margin-right: 5px;
 }
@@ -1618,9 +1618,10 @@ footer .cards .unactive:hover{
 .informacion-text h3{
   background-color: #f28907;
   width: fit-content;
-  padding: 10px 20px;
-  border-radius: 15px;
+  padding: 8px 12px;
+  border-radius: 12px;
   color: #fff;
+  font-size: 15px;
 }
 
 .information-text bi{

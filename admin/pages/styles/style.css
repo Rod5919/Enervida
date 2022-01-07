@@ -396,3 +396,15 @@ main {
   border: 0;
   margin-top: 50px;
 }
+
+.image{
+  display: flex;
+  justify-content: center;
+}
+
+.image img{
+  width: calc(fit-content*2);
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 5px;
+}

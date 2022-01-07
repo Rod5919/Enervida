@@ -47,19 +47,6 @@ function shortener(x, endline) {
     return x
 }
 
-function like(id) {
-    // alert("art-"+(id.slice(-1)));
-    if(document.getElementById(id).classList[1] === "bx-heart"){
-        document.getElementById(id).classList.remove('bx-heart');
-        document.getElementById(id).classList.add('bi-heart-fill');
-        document.getElementById("art-"+(id.slice(-1))).getElementsByClassName("likes")[0].innerHTML++;
-    }else{
-        document.getElementById(id).classList.remove('bi-heart-fill');
-        document.getElementById(id).classList.add('bx-heart');
-        document.getElementById("art-"+(id.slice(-1))).getElementsByClassName("likes")[0].innerHTML--;
-    }
-    // TODO: send 1 more like
-}
 
 function updateHero() {
     document.getElementById("hero").getElementsByTagName('h1')[0].innerHTML = values["highlighted"]["title"];
@@ -71,14 +58,13 @@ function updateHero() {
 function modifier(num) {
     document.getElementById("art-"+num).getElementsByTagName('h3')[0].innerHTML = values["article "+num]["title"];
     document.getElementById("art-"+num).getElementsByTagName('p')[0].innerHTML = shortener(values["article "+num]["summary"].split(" "),false);
+    document.getElementById("art-"+num).getElementsByTagName('a')[0].href = values["article "+num]["url"];
     document.getElementById("art-"+num).getElementsByTagName('img')[0].src = values["article "+num]["img"];
-    document.getElementById("art-"+num).getElementsByClassName("likes")[0].innerHTML = values["article "+num]["likes"];
     document.getElementById("art-"+num).getElementsByClassName("date")[0].innerHTML = values["article "+num]["date"];
     document.getElementById("art-"+num).getElementsByClassName("fa-facebook")[0].href = "https://www.facebook.com/sharer/sharer.php?u="+encodeURIComponent(values["article "+num]["url"]);
-    if(values["article "+num]["liked"]){
-        document.getElementById("like-"+num).classList.remove('bx-heart');
-        document.getElementById("like-"+num).classList.add('bi-heart-fill');
-    }
+    document.getElementById("art-"+num).getElementsByClassName("fa-linkedin")[0].href = "https://www.linkedin.com/shareArticle?mini=true&url="+encodeURIComponent(values["article "+num]["url"]);
+    document.getElementById("art-"+num).getElementsByClassName("fa-link")[0].href = "#1";
+    document.getElementById("art-"+num).getElementsByClassName("fa-link")[0].onclick = function(){copy_to_clipboard(values["article "+num]["url"], num);};
 }
 
 function getData() {
@@ -121,6 +107,20 @@ function add_news(value){
                       </div>
                     </a>`;
     document.getElementById("list").appendChild(div);
+}
+
+function copy_to_clipboard(url, num) {
+    /* Get the text field */
+    var copyText = url;
+  
+    console.log(url);
+     /* Copy the text inside the text field */
+    navigator.clipboard.writeText(copyText);
+  
+    /* Alert the copied text */
+    console.log("Copied the text: " + copyText);
+
+    alert("Link copiado");
 }
 
 function getAllData(api) {
