@@ -72,12 +72,7 @@
                       <div class="upload-field">
                         <input type="file" id="file_upload_id" style="display:none" >
                         <label style="margin-top: 10px;">imagen.jpg</label>
-                        <a href="#"><i id="icon_upload" class="fa fa-folder" onclick="_upload()"></i></a>
-                        <div class="image">
-                          <figure>
-                            <img id="blah" src="#" alt=""/>
-                          </figure>
-                        </div>
+                        <a href="#"><i id="icon_upload" class="fa fa-folder" onclick="_upload('file_upload_id')"></i></a>
                       </div>
                     </div>
                 </div>
@@ -87,6 +82,11 @@
                 </div>
             </form>
       </main>
+      <div class="image">
+        <figure>
+          <img id="blah" src="#" alt=""/>
+        </figure>
+      </div>
 </body>
 <script src="../../../assets/js/main.js"></script>
 <script type="module" src="js/form3.js"></script>

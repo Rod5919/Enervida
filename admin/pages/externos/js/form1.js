@@ -6,7 +6,7 @@ import PostData from '../../js/modules/PostData.js'
 import readURL from '../../js/modules/readURL.js'
 
 window.button.onclick = function() {
-  if ($('#titular').val() && $('#resumen').val() && document.querySelector("#blah").src) {
+  
     PostData(API,{
         nombre: $("#nombre").val(),
         edad: $("#edad").val(),
@@ -18,7 +18,6 @@ window.button.onclick = function() {
         nombre_adoptante: $("#nombre-adoptante").val(),
         whatsapp_adoptante: $("#whatsapp-adoptante".val())
     });
-  }
 }
 
 $('#blah1').hide();

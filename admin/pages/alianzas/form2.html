@@ -44,8 +44,8 @@
     <ul>
       <li class="dropdown"><a href="#"><span class="active">Alianzas</span> <i class="bi bi-chevron-down"></i></a>
         <ul>
-          <li><a class="active" href="form1.html">Nuestros aliados</a></li>
-          <li><a href="form2.html">Nuestros colaboradores</a></li>
+          <li><a href="form1.html">Nuestros aliados</a></li>
+          <li><a class="active" href="form2.html">Nuestros colaboradores</a></li>
           <li><a href="form3.html">Documentos legales</a></li>
         </ul>
       </li>
@@ -66,22 +66,17 @@
       <main>
             <form class="submit-form">
                 <div class="fields">
-                    <div class="field"><span>Nombre Institucional</span><input type="text" placeholder="Nombre Institucional" id="nombre-institucional" required oninvalid="this.setCustomValidity('Debe introducir un nombre institucional')"></div>
-                    <div class="field"><span>Acrónimo/Sigla</span><input type="text" placeholder="Acrónimo" id="sigla" required oninvalid="this.setCustomValidity('Debe introducir una sigla o acrónimo')"></div>
-                    <div class="field"><span>Descripción<br>max. 200 caracteres</span><textarea class="paragraph" name="paragraph_text" cols="50" rows="10" id="descripcion" maxlength="200" placeholder="Escribe una descripción"  required oninvalid="this.setCustomValidity('Debe escribir una descripción')"></textarea></div>
-                    <div class="field"><span>Logo</span>
+                    <div class="field"><span>Nombre</span><input type="text" placeholder="Nombre" id="nombre" required oninvalid="this.setCustomValidity('Debe introducir un nombre')"></div>
+                    <div class="field"><span>Apellido</span><input type="text" placeholder="Apellido" id="apellido" required oninvalid="this.setCustomValidity('Debe introducir un apellido')"></div>
+                    <div class="field"><span>Cargo desarrollado en ENERVIDA<br>max. 200 caracteres</span><textarea class="paragraph" name="paragraph_text" cols="50" rows="10" id="cargo" maxlength="200" placeholder="Escriba el Cargo"  required oninvalid="this.setCustomValidity('Debe escribir el cargo')"></textarea></div>
+                    <div class="field"><span>Fotografía</span>
                       <div class="upload-field">
                         <input type="file" id="file_upload_id" style="display:none" >
-                        <label >logo.jpg</label>
-                        <a href="#"><i id="icon_upload" class="fa fa-folder" onclick="_upload()"></i></a>
-                        <div class="image">
-                          <figure>
-                            <img id="blah" src="#" alt=""/>
-                          </figure>
-                        </div>
+                        <label style="margin-top: 10px;">imagen.jpg</label>
+                        <a href="#"><i id="icon_upload" class="fa fa-folder" onclick="_upload('file_upload_id')"></i></a>
                       </div>
                     </div>
-                    <div class="field"><span>Sitio Web</span><input type="text" placeholder="URL Sitio Web" id="website" required oninvalid="this.setCustomValidity('Debe introducir una URL a un sitio web')"></div>
+                    <div class="field"><span>Whatsapp</span><input type="text" placeholder="Número de celular" id="whatsapp." required oninvalid="this.setCustomValidity('Debe introducir un número móvil con Whatsapp')"></div>
                     <div class="field"><span>Facebook</span><input type="text" placeholder="https://www.facebook.com/" id="facebook" required oninvalid="this.setCustomValidity('Debe introducir una URL a una página de Facebook')"></div>
                     <div class="field"><span>LinkedIn</span><input type="text" placeholder="https://www.linkedin.com/" id="linkedin" required oninvalid="this.setCustomValidity('Debe introducir una URL a una página de LinkedIn')"></div>
                     <div class="field"><span>YouTube</span><input type="text" placeholder="https://www.youtube.com/" id="youtube" required oninvalid="this.setCustomValidity('Debe introducir una URL a un canal de YouTube')"></div>
@@ -93,8 +88,13 @@
                 </div>
             </form>
       </main>
+      <div class="image">
+        <figure>
+          <img id="blah" src="#" alt=""/>
+        </figure>
+      </div>
 </body>
 <script src="../../../assets/js/main.js"></script>
-<script type="module" src="js/form1.js"></script>
+<script type="module" src="js/form2.js"></script>
 </html>
 

@@ -6,13 +6,12 @@ import PostData from './modules/PostData.js'
 import readURL from './modules/readURL.js'
 
 window.button.onclick = function() {
-  if ($('#titular').val() && $('#resumen').val() && document.querySelector("#blah").src) {
+  
     PostData(API,{
       titular: $('#titular').val(),
       resume: $('#resumen').val(),
       img: document.querySelector("#blah").src
     });
-  }
 }
 
 $('#blah').hide();

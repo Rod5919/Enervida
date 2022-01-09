@@ -20,7 +20,6 @@ window.button.onclick = function() {
     });
 }
 
-
 $('#blah').hide();
 
 document.querySelector("#file_upload_id").addEventListener('change', function () {

@@ -8,18 +8,18 @@ import readURL from '../../js/modules/readURL.js'
 window.button.onclick = function() {
   
     PostData(API,{
-        nombre: $("#nombre").val(),
-        apellido: $("#apellido").val(),
-        resumen: $("#resumen").val(),
+        nombre_institucional: $("#nombre-institucional").val(),
+        sigla: $("#sigla").val(),
+        descripcion: $("#descripcion").val(),
         img: document.querySelector("#blah").src,
-        whatsapp: $("#whatsapp").val(),
+        icon_upload: $("#icon_upload").val(),
+        website: $("#website").val(),
         facebook: $("#facebook").val(),
-        linkedIn: $("#linkedIn").val(),
+        linkedin: $("#linkedin").val(),
         youtube: $("#youtube").val(),
-        instagram: $("#instagram".val())
+        instagram: $("#instagram").val()
     });
 }
-
 
 $('#blah').hide();
 

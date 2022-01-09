@@ -12,12 +12,11 @@ GetData(API, (values) => {
 })
 
 window.button.onclick = function() {
-    if ($('#titular').val() && $('#resumen').val() && document.querySelector("#blah").src) {
-      PostData(API,{
-        nombre: $("#nombre"),
-        contacto: $("#contacto"),
-        actividad: $("#actividad"),
-        pais: $("#pets").find(":selected").text().val()
-      });
-    }
-  }
+    
+    PostData(API,{
+      nombre: $("#nombre"),
+      contacto: $("#contacto"),
+      actividad: $("#actividad"),
+      pais: $("#pets").find(":selected").text().val()
+  });
+}
