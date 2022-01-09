@@ -71,9 +71,9 @@
                     <div class="field"><span>Actividad en la que apoyó a ENERVIDA<br>máx. 100 caracteres</span><textarea class="paragraph" name="paragraph_text" cols="50" rows="10" id="resumen" maxlength="250" placeholder="Escribe el resumen"  required oninvalid="this.setCustomValidity('Debe escribir un resumen')"></textarea></div>
                     <div class="field"><span>Imagen</span>
                     <div class="upload-field">
-                        <input type="file" id="file_upload_id" style="display:none" id="file_upload_" >
-                        <label >imagen.jpg</label>
-                        <a href="#"><i id="icon_upload" class="fa fa-folder" onclick="_upload()"></i></a>
+                        <input type="file" id="file_upload_id" style="display:none" >
+                        <label style="margin-top: 10px;">imagen.jpg</label>
+                        <a href="#"><i id="icon_upload" class="fa fa-folder" onclick="_upload('file_upload_id')"></i></a>
                     </div>
                     </div>
                     <div class="field"><span>Whatsapp</span><input type="text" placeholder="Whatsapp" id="whatsapp" oninvalid="this.setCustomValidity('Debe colocar un whatsapp')"></div>
@@ -83,11 +83,16 @@
                     <div class="field"><span>Instagram</span><input type="text" placeholder="Instagram" id="instagram" oninvalid="this.setCustomValidity('Debe colocar un instagram')"></div>
                 </div>
                 <div class="btn">
-                    <input type="submit" onclick="post()" value="PUBLICAR">
+                    <input type="submit" id="btn-upload" value="PUBLICAR">
                 </div>
             </form>
       </main>
+      <div class="image">
+        <figure>
+          <img id="blah" src="#" alt=""/>
+        </figure>
+      </div>
 </body>
 <script src="../../../assets/js/main.js"></script>
-<script src="js/form2.js"></script>
+<script type="module" src="js/form2.js"></script>
 </html>

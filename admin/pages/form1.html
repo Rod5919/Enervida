@@ -70,24 +70,24 @@
                     <div class="field"><span>Nota<br>max. 500 caracteres</span><textarea class="paragraph" name="paragraph_text" cols="50" rows="10" id="resumen" maxlength="500" placeholder="Escribe el resumen"  required oninvalid="this.setCustomValidity('Debe escribir un resumen de la noticia')"></textarea></div>
                     <div class="field"><span>Imagen</span>
                     <div class="upload-field">
-                        <input type="file" id="file_upload_id" style="display:none" id="file_upload_" accept=".jpg, .jpeg, .png" onchange="readURL(this);">
-                        <label >imagen.jpg</label>
-                        <a href="#"><i id="icon_upload" class="fa fa-folder" onclick="_upload()"></i></a>
+                        <input type="file" id="file_upload_id" style="display:none" accept=".jpg, .jpeg, .png" >
+                        <label style="margin-top: 10px;">imagen.jpg</label>
+                        <a href="#"><i id="icon_upload" class="fa fa-folder" onclick="_upload('file_upload_id')"></i></a>
+                        <div class="image">
+                          <figure>
+                            <img id="blah" src="#" alt=""/>
+                          </figure>
+                        </div>
                     </div>
                   </div>
                 </div>
                 <div class="btn">
-                  <input type="submit" onclick="post()" value="PUBLICAR">
+                  <input type="submit" id="btn-upload" value="PUBLICAR">
                 </div>
             </form>
       </main>
-      <div class="image">
-        <figure>
-          <img id="blah" src="#" alt=""/>
-        </figure>
-      </div>
-</body>
-<script src="../../assets/js/main.js"></script>
-<script src="js/form1.js"></script>
+    </body>
+    <script src="../../assets/js/main.js"></script>
+    <script type="module" src="js/form1.js"></script>
 </html>
 

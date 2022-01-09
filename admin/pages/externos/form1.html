@@ -72,9 +72,9 @@
                     <div class="field">
                       <span>Imagen antes</span>
                       <div class="upload-field">
-                        <input type="file" id="file_upload_id" style="display:none" id="file_upload_">
-                        <label >imagen.jpg</label>
-                        <a href="#"><i id="icon_upload" class="fa fa-folder" onclick="_upload()"></i></a>
+                        <input type="file" id="file_upload_id_1" style="display:none" >
+                        <label style="margin-top: 10px;">imagen.jpg</label>
+                        <a href="#"><i id="icon_upload" class="fa fa-folder" onclick="_upload('file_upload_id_1')"></i></a>
                       </div>
                     </div>
                     <div class="field">
@@ -88,22 +88,32 @@
                     <div class="field">
                       <span>Imagen después</span>
                       <div class="upload-field">
-                        <input type="file" id="file_upload_id" style="display:none" id="file_upload_">
-                        <label >imagen.jpg</label>
-                        <a href="#"><i id="icon_upload" class="fa fa-folder" onclick="_upload()"></i></a>
+                        <input type="file" id="file_upload_id_2" style="display:none" >
+                        <label style="margin-top: 10px;">imagen.jpg</label>
+                        <a href="#"><i id="icon_upload" class="fa fa-folder" onclick="_upload('file_upload_id_2')"></i></a>
                       </div>
                     </div>
                     <div class="field"><span>Nombre del adoptante</span><input type="text" placeholder="Nombre del adoptante" id="nombre-adoptante" required oninvalid="this.setCustomValidity('Debe colocar un nombre')"></div>
                     <div class="field"><span>Whatsapp del adoptante</span><input type="text" placeholder="Whatsapp del adoptante" id="whatsapp-adoptante" required oninvalid="this.setCustomValidity('Debe colocar un whatsapp')"></div>
                   </div>
                 <div class="btn">
-                  <input type="submit" onclick="post()" value="PUBLICAR">
+                  <input type="submit" id="btn-upload" value="PUBLICAR">
                 </div>
               </form>
-              
+              <div class="image">
+                <figure>
+                  <img id="blah1" src="#" alt=""/>
+                </figure>
+              </div>
+              <div class="image">
+                <figure>
+                  <img id="blah2" src="#" alt=""/>
+                </figure>
+              </div>
+
       </main>
 </body>
 <script src="../../../assets/js/main.js"></script>
-<script src="js/form1.js"></script>
+<script type="module" src="js/form1.js"></script>
 </html>
 

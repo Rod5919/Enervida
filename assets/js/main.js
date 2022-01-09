@@ -133,6 +133,6 @@
 }
 })()
 
-function _upload(){
-  document.getElementById('file_upload_id').click();
+function _upload(id){
+  document.getElementById(id).click();
 }

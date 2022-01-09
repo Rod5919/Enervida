@@ -18,6 +18,6 @@ window.button.onclick = function() {
 $('#blah').hide();
 
 document.querySelector("#file_upload_id").addEventListener('change', function () {
-  window.uploadIMG(document.querySelector("#file_upload_id"), '#blah');
+  window.uploadIMG(document.querySelector("#file_upload_id"),'#blah');
 })
 window.uploadIMG = readURL;

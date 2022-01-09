@@ -23,17 +23,16 @@ values = {
                      ]
     },
     "cys":{
-        "beneficios": ['cys-ben 1',
-                       'cys-ben 2',
-                       'cys-ben 3',
+        "beneficios": ['La energía eléctrica es el motor de la vida moderna, aprende a utilizarla con eficiencia para incrementar las utilidades de tu organización.',
+                       'Tanto para agua potable como para riego de cultivos, el agua es de vital importancia.',
+                       '(Reducción de huella de carbono)Todas nuestras actividades contaminan en cierto grado. Descubre cómo medir tu huella de carbono para adoptar medidas de disminución.',
+                       '(Disminución de GEI) Descubre cómo puedes diseñar y ejecutar proyectos de reducción de emisiones de Gases de Efecto Invernadero, para disminuir tu huella.'
                       ],
         "servicios": ['Para muchos desconocida, la energía solar puede cambiar tu estilo de vida. Conócela con nuestras capacitaciones totalmente prácticas.',
-                      'cys-ser 2',
-                      'cys-ser 3',
+                      'El bombeo solar brinda calidad de vida y uso digno.',
+                      'Si tienes ambientes muy fríos en tu casa u oficina, aprender a usar la energía solar para calentarlos de manera fácil y gratuita.',
                      ],
-        "proyectos": ['cys-pro 1',
-                      'cys-pro 2',
-                      'cys-pro 3',
+        "proyectos": ['(Autoconsumo solar) Ya es una realidad en Bolivia. Conoce cómo disminuir tu factura de electricidad, incluso vender electricidad a tu proveedora de electricidad.',
                      ]
     },
     "tel":{

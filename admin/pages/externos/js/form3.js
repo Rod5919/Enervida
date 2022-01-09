@@ -1,27 +1,23 @@
-function getData() {
-    // Creating the XMLHttpRequest object
-    var request = new XMLHttpRequest();
+window.button = document.querySelector('#btn-upload');
 
-    // Instantiating the request object
-    request.open("GET", "../../../../data/countries.json");
+import PostData from '../../js/modules/PostData.js'
+import GetData from '../../../../assets/js/pages/modules/GetData.js'
 
-    // Defining event listener for readystatechange event
-    request.onreadystatechange = function() {
-        // Check if the request is compete and was successful
-        if(this.readyState === 4 && this.status === 200) {
-            // Inserting the response from server into an HTML element
-            // console.log(JSON.parse(this.responseText));
-            values = JSON.parse(this.responseText);
-            console.log(values);
-            for (let index = 1; index <= Object.keys(values).length; index++) {
-                console.log(values[index]);
-                $("#pets").append('<option value="'+values[index]+'">'+values[index]+'</option>')
-            }
-        }
-    };
+const API = "../../../../data/countries.json";
 
-    // Sending the request to the server
-    request.send();
-}
+GetData(API, (values) => {
+    for (let index = 1; index <= Object.keys(values).length; index++) {
+        $("#pets").append('<option value="'+values[index]+'">'+values[index]+'</option>')
+    }
+})
 
-getData();
+window.button.onclick = function() {
+    if ($('#titular').val() && $('#resumen').val() && document.querySelector("#blah").src) {
+      PostData(API,{
+        nombre: $("#nombre"),
+        contacto: $("#contacto"),
+        actividad: $("#actividad"),
+        pais: $("#pets").find(":selected").text().val()
+      });
+    }
+  }

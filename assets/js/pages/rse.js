@@ -1,30 +1,3 @@
-let val = {};
-let counter = 0;
-let api = "../../../data/volunteers.json";
-let api_a = "../../../data/adoptions.json";
-
-//#region Spotlight
-function getData(api) {
-    // Creating the XMLHttpRequest object
-    var request = new XMLHttpRequest();
-
-    // Instantiating the request object
-    request.open("GET", api);
-
-    // Defining event listener for readystatechange event
-    request.onreadystatechange = function() {
-        // Check if the request is compete and was successful
-        if(this.readyState === 4 && this.status === 200) {
-            // Inserting the response from server into an HTML element
-            // console.log(JSON.parse(this.responseText));
-            val = JSON.parse(this.responseText);
-            updateVolunteers();
-        }
-    };
-    // Sending the request to the server
-    request.send();
-}
-
 values = {
 	"actividades": {
         "subtitle": "Subtítulo de Actividades",
@@ -47,6 +20,63 @@ values = {
         "img": "assets/img/about.jpg"
     }
 }
+volunteers = {
+    "1": {
+        "name": "Nombre Voluntario 1",
+        "position": "Cargo Voluntario 1",
+        "description": "Descripción Voluntario 1",
+        "img": "assets/img/trainers/trainer-1.jpg",
+        "facebook": "https://www.facebook.com/",
+        "instagram": "https://www.instagram.com/",
+        "linkedin": "https://www.linkedin.com/" 
+    },
+    "2": {
+        "name": "Nombre Voluntario 2",
+        "position": "Cargo Voluntario 2",
+        "description": "Descripción Voluntario 2",
+        "img": "assets/img/trainers/trainer-2.jpg",
+        "facebook": "https://www.facebook.com/",
+        "instagram": "https://www.instagram.com/",
+        "linkedin": "https://www.linkedin.com/" 
+    },
+    "3": {
+        "name": "Nombre Voluntario 3",
+        "position": "Cargo Voluntario 3",
+        "description": "Descripción Voluntario 3",
+        "img": "assets/img/trainers/trainer-3.jpg",
+        "facebook": "https://www.facebook.com/",
+        "instagram": "https://www.instagram.com/",
+        "linkedin": "https://www.linkedin.com/" 
+    },
+    "4": {
+        "name": "Nombre Voluntario 4",
+        "position": "Cargo Voluntario 4",
+        "description": "Descripción Voluntario 4",
+        "img": "assets/img/trainers/trainer-1.jpg",
+        "facebook": "https://www.facebook.com/",
+        "instagram": "https://www.instagram.com/",
+        "linkedin": "https://www.linkedin.com/" 
+    },
+    "5": {
+        "name": "Nombre Voluntario 5",
+        "position": "Cargo Voluntario 5",
+        "description": "Descripción Voluntario 5",
+        "img": "assets/img/trainers/trainer-1.jpg",
+        "facebook": "https://www.facebook.com/",
+        "instagram": "https://www.instagram.com/",
+        "linkedin": "https://www.linkedin.com/" 
+    },
+    "6": {
+        "name": "Nombre Voluntario 6",
+        "position": "Cargo Voluntario 6",
+        "description": "Descripción Voluntario 6",
+        "img": "assets/img/trainers/trainer-1.jpg",
+        "facebook": "https://www.facebook.com/",
+        "instagram": "https://www.instagram.com/",
+        "linkedin": "https://www.linkedin.com/" 
+    }
+}
+
 adoptions = {
     "1": {
         "name": "adoption 1",
@@ -141,5 +171,5 @@ function updateAdoptions(){
 
 updateActivities();
 updateExperiences();
-getData(api);
-// getData(api_a, adoptions);
+updateVolunteers();
+updateAdoptions();
