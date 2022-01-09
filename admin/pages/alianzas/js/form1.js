@@ -12,13 +12,18 @@ window.button.onclick = function() {
         sigla: $("#sigla").val(),
         descripcion: $("#descripcion").val(),
         img: document.querySelector("#blah").src,
-        icon_upload: $("#icon_upload").val(),
         website: $("#website").val(),
         facebook: $("#facebook").val(),
         linkedin: $("#linkedin").val(),
         youtube: $("#youtube").val(),
         instagram: $("#instagram").val()
-    });
+    },[
+        "nombre_institucional",
+        "sigla",
+        "descripcion",
+        "website",
+    ]
+    );
 }
 
 $('#blah').hide();
@@ -28,3 +33,7 @@ document.querySelector("#file_upload_id").addEventListener('change', function ()
 })
 
 window.uploadIMG = readURL;
+
+$("#btn-upload").submit(function() {
+    alert("Form submitted");
+});

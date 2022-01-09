@@ -12,7 +12,10 @@ window.button.onclick = function() {
         nombre_documento: $("#nombre-documento").val(),
         anio: $("#anio").val(),
         img: document.querySelector("#blah").src
-      });
+      },[
+        "nombre_documento",
+        "anio"
+      ]);
 }
 
 
@@ -25,5 +28,9 @@ document.querySelector("#file_upload_id").addEventListener('change', function ()
 window.uploadIMG = readURL;
 
 $("#btn-upload").submit(function(e) {
-    e.preventDefault();
+    alert("Form submitted");
+});
+
+$("#btn-upload").submit(function(e) {
+    alert("Form submitted");
 });

@@ -18,5 +18,10 @@ window.button.onclick = function() {
       contacto: $("#contacto"),
       actividad: $("#actividad"),
       pais: $("#pets").find(":selected").text().val()
-  });
+  },[
+    "nombre",
+    "contacto",
+    "actividad",
+    "pais"
+  ]);
 }

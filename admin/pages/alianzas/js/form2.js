@@ -17,7 +17,12 @@ window.button.onclick = function() {
         linkedIn: $("#linkedIn").val(),
         youtube: $("#youtube").val(),
         instagram: $("#instagram".val())
-    });
+    },[
+        "nombre",
+        "apellido",
+        "resumen"
+    ]
+    );
 }
 
 $('#blah').hide();
@@ -27,3 +32,7 @@ document.querySelector("#file_upload_id").addEventListener('change', function ()
 })
 
 window.uploadIMG = readURL;
+
+$("#btn-upload").submit(function(e) {
+    alert("Form submitted");
+});
