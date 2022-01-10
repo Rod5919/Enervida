@@ -50,17 +50,15 @@ values = {
                      ]
     },
     "bio":{
-        "beneficios": ['bio-ben 1',
-                       'bio-ben 2',
-                       'bio-ben 3',
+        "beneficios": ['Disminuye costos de energía, es más ecológico, menos presión al SIN, etc.',
+                       'El confort térmico no debería costar, ni contaminar más.',
+                       'Conocer y aplicar criterios de energía solar pasiva, puede brindar mayor confort térmico a costo “cero”.',
                       ],
-        "servicios": ['bio-ser 1',
-                      'bio-ser 2',
-                      'bio-ser 3',
+        "servicios": ['Asesoramos en la construcción de eco-viviendas, eco-escuelas, etc. Utilizamos técnicas de construcción para aprovechar la radiación solar.',
+                      'Eliminamos estufas, calefacción, aires acondicionados, ventiladores, etc.',
                      ],
-        "proyectos": ['bio-pro 1',
-                      'bio-pro 2',
-                      'bio-pro 3',
+        "proyectos": ['El centro demostrativo de Achocalla es la primera vivienda en La Paz en la que se ha aplicado varios criterios de Arquitectura Solar Pasiva y activa para la autosostenibilidad.',
+                      'A la fecha se tiene en proyecto el “1er conjunto habitacional de Achocalla con criterios de ASP”.',
                      ]
     }
 };
