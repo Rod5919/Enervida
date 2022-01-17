@@ -5,23 +5,25 @@ window.button = document.querySelector("#btn-upload");
 const d = new Date();
 const API = "../../../api/posts/create.php";
 
-const post = new PostData();
-
+const post = new PostData(API);
 
 window.button.onclick = async () => {
+
+  // original content
+  let or_con = $("#resumen").val().toString();
+  let or_title = $("#titular").val()
+
   const data = {
-    title: $("#titular").val(),
-    summary: ($("#resumen").val()).toString().splice(0,200),
-    content: $("#resumen").val(),
+    title: or_title,
+    summary: or_con.substring(0,200),
+    content: or_con,
     date: `${d.getDate()}-${d.getMonth() + 1}-${d.getFullYear()}`,
     url: "",
     img: document.querySelector("#blah").src,
   };
-  const requireds = [
-    "title",
-    "content"
-  ];
-  post.post(data,requireds);
+  const requireds = ["title", "content"];
+
+  post.post(data, requireds);
 };
 
 $("#blah").hide();
