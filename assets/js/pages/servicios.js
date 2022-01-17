@@ -1,4 +1,4 @@
-values = {
+let values = {
     "amb":{
         "beneficios": ['Mientras más reduzcamos la    huella de carbono, más amigables con el planeta somos.',
                        'Disminución de los gases de efecto invernadero.',

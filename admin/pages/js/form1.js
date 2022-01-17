@@ -1,44 +1,27 @@
+import PostData from "./modules/PostData.js";
+import readURL from "./modules/readURL.js";
+
 window.button = document.querySelector("#btn-upload");
 const d = new Date();
 const API = "../../../api/posts/create.php";
 
-import PostData from "./modules/PostData.js";
-import readURL from "./modules/readURL.js";
+const post = new PostData();
+
 
 window.button.onclick = async () => {
-  var data = new FormData();
-  const bodyJson = {
+  const data = {
     title: $("#titular").val(),
-    summary: $("#resumen").val(),
+    summary: ($("#resumen").val()).toString().splice(0,200),
     content: $("#resumen").val(),
     date: `${d.getDate()}-${d.getMonth() + 1}-${d.getFullYear()}`,
     url: "",
     img: document.querySelector("#blah").src,
   };
-
-  for (var key in bodyJson) {
-    console.log(bodyJson[key]);
-    data.append(key, bodyJson[key]);
-  }
-
-  for (var key of data.entries()) {
-    console.log(key[0] + ", " + key[1]);
-    alert("", "fetched");
-  }
-  const settings = {
-    method: "POST",
-    body: data,
-  };
-  const fetchResponse = await fetch(API, settings);
-  const responseData = await fetchResponse.json();
-  alert("", "posted");
-  return data;
-  try {
-  } catch (e) {
-    return e;
-  }
-
-
+  const requireds = [
+    "title",
+    "content"
+  ];
+  post.post(data,requireds);
 };
 
 $("#blah").hide();
@@ -53,4 +36,3 @@ window.uploadIMG = readURL;
 $("#btn-upload").submit(function (e) {
   e.preventDefault(); // <==stop page refresh==>
 });
-.0

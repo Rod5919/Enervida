@@ -1,17 +1,37 @@
 class PostData {
-    constructor(api, data, requireds) {
+    constructor(api) {
+        this.api = api;
+        this.post = this.post.bind(this);
+    }
+
+    async post(data,requireds){
         if (this.validator(data, requireds)) {
             console.log(data);
-            var xhr = new XMLHttpRequest();
-            xhr.open("POST", api, true);
-            xhr.setRequestHeader('Content-Type', 'application/json');
-            xhr.send(JSON.stringify(data));
+            let dataForm = new FormData();
+            
+            for (var key in data) {
+                console.log(data[key]);
+                dataForm.append(key, data[key]);
+            }
+
+            for (var key of dataForm.entries()) {
+                console.log(key[0] + ", " + key[1]);
+                alert("", "fetched");
+            }
+            const settings = {
+                method: "POST",
+                body: dataForm,
+            };
+            const fetchResponse = await fetch(this.api, settings);
+            await fetchResponse.json();
             alert("Form submitted successfully");
+            return dataForm;
         }else{
             console.error("Empty required form field");
         }
     }
-    validator(data, requireds) {
+
+    validator(data,requireds) {
         for (const item in requireds) {
             if (data[requireds[item]].length == 0) {
                 return false;
