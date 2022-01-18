@@ -11,17 +11,24 @@ GetData(API, (values) => {
     }
 })
 
-window.button.onclick = function() {
-    
-    PostData(API,{
-      nombre: $("#nombre"),
-      contacto: $("#contacto"),
-      actividad: $("#actividad"),
-      pais: $("#pets").find(":selected").text().val()
-  },[
-    "nombre",
-    "contacto",
-    "actividad",
-    "pais"
-  ]);
-}
+const d = new Date();
+const post = new PostData(API);
+
+window.button.onclick = async () => {
+
+  // original content
+  let or_con = $("#resumen").val().toString();
+  let or_title = $("#titular").val()
+
+  const data = {
+    title: or_title,
+    summary: or_con.substring(0,200),
+    content: or_con,
+    date: `${d.getDate()}-${d.getMonth() + 1}-${d.getFullYear()}`,
+    url: "",
+    img: document.querySelector("#blah").src,
+  };
+  const requireds = ["title", "content"];
+
+  post.post(data, requireds);
+};

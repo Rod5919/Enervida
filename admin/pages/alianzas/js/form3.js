@@ -6,18 +6,27 @@ import readURL from '../../js/modules/readURL.js'
 const API = "../../../../data/countries.json";
 
 
-window.button.onclick = function() {
-    
-      PostData(API,{
-        nombre_documento: $("#nombre-documento").val(),
-        anio: $("#anio").val(),
-        img: document.querySelector("#blah").src
-      },[
-        "nombre_documento",
-        "anio"
-      ]);
-}
+const d = new Date();
+const post = new PostData(API);
 
+window.button.onclick = async () => {
+
+  // original content
+  let or_con = $("#resumen").val().toString();
+  let or_title = $("#titular").val()
+
+  const data = {
+    title: or_title,
+    summary: or_con.substring(0,200),
+    content: or_con,
+    date: `${d.getDate()}-${d.getMonth() + 1}-${d.getFullYear()}`,
+    url: "",
+    img: document.querySelector("#blah").src,
+  };
+  const requireds = ["title", "content"];
+
+  post.post(data, requireds);
+};
 
 $('#blah').hide();
 

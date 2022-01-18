@@ -2,9 +2,9 @@ import PostData from "./modules/PostData.js";
 import readURL from "./modules/readURL.js";
 
 window.button = document.querySelector("#btn-upload");
-const d = new Date();
 const API = "../../../api/posts/create.php";
 
+const d = new Date();
 const post = new PostData(API);
 
 window.button.onclick = async () => {

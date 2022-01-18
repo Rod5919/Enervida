@@ -5,26 +5,27 @@ const API = "../../../../data/news.json";
 import PostData from '../../js/modules/PostData.js'
 import readURL from '../../js/modules/readURL.js'
 
-window.button.onclick = function() {
-  
-    PostData(API,{
-        nombre_institucional: $("#nombre-institucional").val(),
-        sigla: $("#sigla").val(),
-        descripcion: $("#descripcion").val(),
-        img: document.querySelector("#blah").src,
-        website: $("#website").val(),
-        facebook: $("#facebook").val(),
-        linkedin: $("#linkedin").val(),
-        youtube: $("#youtube").val(),
-        instagram: $("#instagram").val()
-    },[
-        "nombre_institucional",
-        "sigla",
-        "descripcion",
-        "website",
-    ]
-    );
-}
+const d = new Date();
+const post = new PostData(API);
+
+window.button.onclick = async () => {
+
+  // original content
+  let or_con = $("#resumen").val().toString();
+  let or_title = $("#titular").val()
+
+  const data = {
+    title: or_title,
+    summary: or_con.substring(0,200),
+    content: or_con,
+    date: `${d.getDate()}-${d.getMonth() + 1}-${d.getFullYear()}`,
+    url: "",
+    img: document.querySelector("#blah").src,
+  };
+  const requireds = ["title", "content"];
+
+  post.post(data, requireds);
+};
 
 $('#blah').hide();
 
