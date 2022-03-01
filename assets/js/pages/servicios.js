@@ -36,17 +36,15 @@ let values = {
                      ]
     },
     "tel":{
-        "beneficios": ['tel-ben 1',
-                       'tel-ben 2',
-                       'tel-ben 3',
+        "beneficios": ['Acceso a la tecnología de la información y las comunicaciones',
+                       'proporcionar acceso universal y asequible a Internet.',
+                       'Internet de calidad al alcance de las comunidades rurales del país. Comunicación digital para mantenernos unidos.Velocidad y sin interrupciones.Películas, videos, redes sociales, conocimiento y mucho más contenido multimedia.',
                       ],
-        "servicios": ['tel-ser 1',
-                      'tel-ser 2',
-                      'tel-ser 3',
+        "servicios": ['Básico (mensualidad: 130Bs + equipos: 850Bs): 5Mbps hasta 4 equipos conectados',
+                      'Avanzado (mensualidad: 230Bs + equipos: 1050Bs): 10Mbps hasta 8 equipos conectados',
+                      'Pro (mensualidad: 420Bs + equipos 1250Bs): 20Mbps hasta 15 equipos conectados',
                      ],
-        "proyectos": ['tel-pro 1',
-                      'tel-pro 2',
-                      'tel-pro 3',
+        "proyectos": ['Internet rural: Consiste en la interconexión a internet sin cables, a través de modernas antenas que ofrecen calidad y velocidad en cada vez más regiones del país.'
                      ]
     },
     "bio":{
