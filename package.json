@@ -1,0 +1,28 @@
+{
+  "name": "enervida",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rod5919/Enervida.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rod5919/Enervida/issues"
+  },
+  "homepage": "https://github.com/Rod5919/Enervida#readme",
+  "dependencies": {
+    "firebase": "^9.8.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
