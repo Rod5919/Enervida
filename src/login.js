@@ -14,15 +14,14 @@ const logButton = document.querySelector('#log-button');
 const loginForm = document.querySelector('.login-form');
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCaJnH8j50gVOvzO3E2NnGjwzQeeC6xW7k",
-    authDomain: "fir-enervida.firebaseapp.com",
-    databaseURL: "https://fir-enervida-default-rtdb.firebaseio.com",
-    projectId: "fir-enervida",
-    storageBucket: "fir-enervida.appspot.com",
-    messagingSenderId: "834297702702",
-    appId: "1:834297702702:web:8c1ba9af1fa2cd240632bf",
-    measurementId: "G-4D2TBHWE4P"
-};
+    apiKey: "AIzaSyAl0BpNq9ooPpnl49FCb9jAkz5E-NoLcjk",
+    authDomain: "enervida-b74cc.firebaseapp.com",
+    projectId: "enervida-b74cc",
+    storageBucket: "enervida-b74cc.appspot.com",
+    messagingSenderId: "1038354980356",
+    appId: "1:1038354980356:web:43ae80439e350e9fb59f51",
+    measurementId: "G-FJJE1LYEC1"
+  };
 
 initializeApp(firebaseConfig);
 const auth = getAuth();
